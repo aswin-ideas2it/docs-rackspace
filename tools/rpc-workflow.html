@@ -143,6 +143,7 @@
 <li class="toctree-l2"><a class="reference internal" href="GitHub-infra-templates/index.html">GitHub Infra Templates</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../outreach/rack-blog-post-process.html">Rackspace blog processes and procedures</a></li>
 </ul>
 
             
@@ -572,8 +573,19 @@ upstream  git@github.com:rackerlabs/docs-rpc.git (push)
 <div class="section" id="publishing-internally">
 <h3>Publishing internally<a class="headerlink" href="#publishing-internally" title="Permalink to this headline">#</a></h3>
 <ol class="arabic">
-<li><p class="first">Update the stable branches (e.g. <code class="docutils literal"><span class="pre">v11</span></code>, <code class="docutils literal"><span class="pre">v12</span></code>, <code class="docutils literal"><span class="pre">v13</span></code>):</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="nv">branches</span><span class="o">=(</span>v11 v12 v13<span class="o">)</span>
+<li><p class="first">Update the stable branches (e.g. <code class="docutils literal"><span class="pre">v12</span></code>, <code class="docutils literal"><span class="pre">v13</span></code>, <code class="docutils literal"><span class="pre">v14</span></code>). You
+can use the following script:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+
+<span class="c1"># Merges upstream into local stable branches and pushes the</span>
+<span class="c1"># results to origin.</span>
+<span class="c1">#</span>
+<span class="c1"># NOTE: the local branches (v12, v13, ...) must exist before</span>
+<span class="c1"># running this script</span>
+
+
+<span class="nv">branches</span><span class="o">=(</span>v12 v13 v14<span class="o">)</span>
+<span class="nb">echo</span>
 
 <span class="k">for</span> item in <span class="si">${</span><span class="nv">branches</span><span class="p">[@]</span><span class="si">}</span><span class="p">;</span> <span class="k">do</span>
     git checkout <span class="nv">$item</span>
@@ -581,11 +593,15 @@ upstream  git@github.com:rackerlabs/docs-rpc.git (push)
     git merge upstream/<span class="nv">$item</span>
     git push origin <span class="nv">$item</span>
 <span class="k">done</span>
+
+git checkout master
+git branch
+<span class="nb">echo</span>
 </pre></div>
 </div>
 </li>
-<li><p class="first">Run the publish command from the master branch while connected to the
-Rackspace network directly or through VPN:</p>
+<li><p class="first">Run the publish command from the master branch while connected to
+the Rackspace network directly or through VPN:</p>
 <div class="code highlight-default"><div class="highlight"><pre><span></span>$ tox -e publish
 </pre></div>
 </div>
