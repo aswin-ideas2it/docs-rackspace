@@ -42,9 +42,9 @@
               href="../genindex.html"/>
         <link rel="search" title="Search" href="../search.html"/>
     <link rel="top" title="Rackspace Documentation Guides  documentation" href="../index.html"/>
-        <link rel="up" title="Style guidelines for technical content" href="index.html"/>
+        <link rel="up" title="Style guide for technical content" href="index.html"/>
         <link rel="next" title="Style guide revision history" href="revision-history.html"/>
-        <link rel="prev" title="Screenshot and diagram guidelines" href="screenshot-diagram-guidelines.html"/> 
+        <link rel="prev" title="Diagram guidelines" href="screenshots/diagram-guidelines.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -96,21 +96,15 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../contributor-collateral/index.html">Contribute to Rackspace documentation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../rpc/index.html">RPC team documentation</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">Style guidelines for technical content</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Style guide for technical content</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="writing/index.html">Writing guidelines</a></li>
 <li class="toctree-l2"><a class="reference internal" href="style/index.html">Style guidelines</a></li>
 <li class="toctree-l2"><a class="reference internal" href="terminology/index.html">Terminology guidelines</a></li>
-<li class="toctree-l2"><a class="reference internal" href="screenshot-diagram-guidelines.html">Screenshot and diagram guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="screenshots/index.html">Screenshot and diagram guidelines</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Release notes guidelines</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#structure">Structure</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#formatting">Formatting</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#wording">Wording</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#what-s-new">What's new</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#resolved-issues">Resolved issues</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#known-issues">Known issues</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#documentation-changes">Documentation changes</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="#wording">Wording</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#editing-existing-release-notes">Editing existing release notes</a></li>
 </ul>
 </li>
@@ -164,7 +158,7 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="index.html">Style guidelines for technical content</a> &raquo;</li>
+          <li><a href="index.html">Style guide for technical content</a> &raquo;</li>
         
       <li>Release notes guidelines</li>
     
@@ -186,11 +180,11 @@
            <div itemprop="articleBody">
             
   <div class="section" id="release-notes-guidelines">
-<h1>Release notes guidelines<a class="headerlink" href="#release-notes-guidelines" title="Permalink to this headline">#</a></h1>
+<span id="id1"></span><h1>Release notes guidelines<a class="headerlink" href="#release-notes-guidelines" title="Permalink to this headline">#</a></h1>
 <p>This topic provides guidelines for writing release notes (RN) for
 Rackspace Cloud services APIs.</p>
-<p>A template for the API RN is available in the <a class="reference external" href="https://github.com/rackerlabs/docs-common/blob/master/templates/release-note-latest-template.rst">docs-common
-repo</a>.</p>
+<p>A template for API RN is available in <a class="reference external" href="https://github.com/rackerlabs/docs-repo-template/blob/master/api-guide-template/release-notes/releases/release-notes-template.rst">on
+GitHub</a>.</p>
 <p>For an example that illustrates most of these guidelines, see the <a class="reference external" href="https://developer.rackspace.com/docs/cloud-block-storage/v1/release-notes/">Cloud
 Block Storage Release
 Notes</a>.</p>
@@ -206,22 +200,34 @@ Notes</a>.</p>
 guidelines:</p>
 <ul>
 <li><p class="first">Use one of the following formats for the title of the RN file:</p>
-<ul>
-<li><p class="first">If the release has a version number, use that in the title. For
-example:</p>
-<p><strong>v2.20.0, June 25, 2016</strong></p>
-</li>
-<li><p class="first">If the release does not have a version number, use the API contract
-version and date. For example:</p>
-<p><strong>API | contract version | updates, January 07, 2016</strong></p>
-</li>
-<li><p class="first">If you are documenting a named or initial release, indicate the
-initial release in the title. For example:</p>
-<p><strong>API |contract version | release, January 07, 2016</strong></p>
-</li>
-</ul>
-<p>You can precede release with a type, such as EA or UA. For example:</p>
-<p><strong>API |contract version | EA release, January 07, 2016</strong></p>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Format</th>
+<th class="head">Example</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>If the release has a version number, use that in the title.</td>
+<td><strong>v2.20.0, June 25, 2017</strong></td>
+</tr>
+<tr class="row-odd"><td>If the release does not have a version number, use the API contract
+version and date.</td>
+<td><strong>API | contract version | updates, January 07, 2017</strong></td>
+</tr>
+<tr class="row-even"><td><p class="first">If you are documenting a named or initial release, indicate the
+initial release in the title.</p>
+<p class="last">You can precede release with a type, such as EA or UA.</p>
+</td>
+<td><p class="first"><strong>API |contract version | release, September 14, 2017</strong></p>
+<p class="last"><strong>API |contract version | EA release, September 14, 2017</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
 </li>
 <li><p class="first">Use the following main sections in the release notes:</p>
 <ul class="simple">
@@ -285,51 +291,57 @@ you need to introduce the first release of a major version.</p>
 <p>If you refer to content in another part of the API document, provide a
 link to the specific section.</p>
 <p>Use the following guideline when creating items in each section:</p>
-<div class="section" id="what-s-new">
-<h3>What's new<a class="headerlink" href="#what-s-new" title="Permalink to this headline">#</a></h3>
-<p>Use sentences to describe the new feature or enhancement. Provide
-details as needed, and provide a link to any section in the
-documentation that describes that feature.</p>
-<p><strong>Example:</strong></p>
-<p>IPv6 support has been added. When you create a server, an IPv4 address
-and an IPv6 address block are assigned. The IPv4 address and IPv6
-address block are used for the public interface (Internet). The IPv4
-address is also used for the private interface.</p>
-</div>
-<div class="section" id="resolved-issues">
-<h3>Resolved issues<a class="headerlink" href="#resolved-issues" title="Permalink to this headline">#</a></h3>
-<p>Provide an initial phrase that describes the issue that was fixed. Start
-the phrase with a past-tense verb. If necessary, include sentences to
-further explain the fix. If you list only phrases, do not use ending
-punctuation.</p>
-<p><strong>Example:</strong></p>
-<ul class="simple">
-<li>Added support for Debian 8 (Jessie)</li>
-<li>Trimmed the Monitoring ID and Monitoring Token configuration
-variables to ensure correctness</li>
-<li>Fixed the Xen Server 6 package repo</li>
-</ul>
-</div>
-<div class="section" id="known-issues">
-<h3>Known issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">#</a></h3>
-<p>Use sentences to describe the issue. If a workaround is available,
-explain it.</p>
-<p><strong>Example:</strong></p>
-<p>The create a service operation does not support Classless Inter-Domain
-Routing (CIDR) for IP address restrictions.</p>
-</div>
-<div class="section" id="documentation-changes">
-<h3>Documentation changes<a class="headerlink" href="#documentation-changes" title="Permalink to this headline">#</a></h3>
-<p>Provide an initial phrase that describes the issue that was fixed. Start
-the phrase with a past-tense verb. If necessary, include sentences to
-further explain the fix. If you list only phrases, do not use ending
-punctuation. Provide a link to the relevant section in the
-documentation.</p>
-<p><strong>Example:</strong></p>
-<p>Clarified the descriptions of the alert policies to include how the
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="20%" />
+<col width="40%" />
+<col width="40%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Section</th>
+<th class="head">Guideline</th>
+<th class="head">Examples</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>What's new</td>
+<td>Use sentences to describe the new feature or enhancement. Provide
+as needed, and provide a link to any section in the
+documentation that describes that feature.</td>
+<td>IPv6 support has been added. When you create a server, an IPv4
+address and an IPv6 address block are assigned. The IPv4 address and
+IPv6 address block are used for the public interface (Internet). The
+IPv4 address is also used for the private interface.</td>
+</tr>
+<tr class="row-odd"><td>Resolved issues</td>
+<td>Provide an initial phrase that describes the issue that was fixed.
+Start the phrase with a past-tense verb. If necessary, include
+sentences to further explain the fix. If you list only phrases, do
+not use ending punctuation.</td>
+<td><p class="first">Added support for Debian 8 (Jessie)</p>
+<p>Trimmed the Monitoring ID and Monitoring Token configuration
+variables to ensure correctness</p>
+<p class="last">Fixed the Xen Server 6 package repo</p>
+</td>
+</tr>
+<tr class="row-even"><td>Known issues</td>
+<td>Use sentences to describe the issue. If a workaround is available,
+explain it.</td>
+<td>The create a service operation does not support Classless
+Inter-Domain Routing (CIDR) for IP address restrictions.</td>
+</tr>
+<tr class="row-odd"><td>Documentation changes</td>
+<td>Provide an initial phrase that describes the issue that was fixed.
+Start the phrase with a past-tense verb. If necessary, include
+sentences to further explain the fix. If you list only phrases, do
+not use ending punctuation. Provide a link to the relevant section in
+the documentation.</td>
+<td>Clarified the descriptions of the alert policies to include how the
 polling window affects the alarm state. See <a class="reference external" href="https://developer.rackspace.com/docs/rackspace-monitoring/v1/tech-ref-info/alert-triggers-and-alarms/#alert-policies">Alert
-policies</a>.</p>
-</div>
+policies</a>.</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="editing-existing-release-notes">
 <h2>Editing existing release notes<a class="headerlink" href="#editing-existing-release-notes" title="Permalink to this headline">#</a></h2>
@@ -358,7 +370,7 @@ of publication</li>
         <a href="revision-history.html" class="btn btn-neutral float-right" title="Style guide revision history" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="screenshot-diagram-guidelines.html" class="btn btn-neutral" title="Screenshot and diagram guidelines" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="screenshots/diagram-guidelines.html" class="btn btn-neutral" title="Diagram guidelines" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
