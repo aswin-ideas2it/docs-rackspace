@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Templates &mdash; Rackspace Documentation Guides  documentation</title>
+  <title>Markup guidelines &mdash; Rackspace Documentation Guides  documentation</title>
   
 
   
@@ -42,8 +42,9 @@
               href="../genindex.html"/>
         <link rel="search" title="Search" href="../search.html"/>
     <link rel="top" title="Rackspace Documentation Guides  documentation" href="../index.html"/>
-        <link rel="next" title="How-to task template" href="how-to-task-template.html"/>
-        <link rel="prev" title="Style guide revision history" href="../style-guide/revision-history.html"/> 
+        <link rel="up" title="Style guide for technical content" href="index.html"/>
+        <link rel="next" title="Terminology guidelines" href="terminology/index.html"/>
+        <link rel="prev" title="URLs and domain names" href="style/urls.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -94,13 +95,22 @@
             
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../contributor-collateral/index.html">Contribute to Rackspace documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../style-guide/index.html">Style guide for technical content</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Templates</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="how-to-task-template.html">How-to task template</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ISSUE_TEMPLATE.html">Report an issue with the documentation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="PULL_REQUEST_TEMPLATE.html">Quality audit reminder</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Style guide for technical content</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="writing/index.html">Writing guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="style/index.html">Style guidelines</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Markup guidelines</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#restructured-text-rst">ReStructured Text (RST)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#markdown-md">MarkDown (MD)</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="terminology/index.html">Terminology guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="screenshots/index.html">Screenshot and diagram guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release-notes-guidelines.html">Release notes guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="revision-history.html">Style guide revision history</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../templates/index.html">Templates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tools/index.html">Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../outreach/rack-blog-post-process.html">Rackspace blog processes and procedures</a></li>
 </ul>
@@ -147,13 +157,15 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>Templates</li>
+          <li><a href="index.html">Style guide for technical content</a> &raquo;</li>
+        
+      <li>Markup guidelines</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/templates/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/style-guide/markup-guidelines.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -166,23 +178,39 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="templates">
-<h1>Templates<a class="headerlink" href="#templates" title="Permalink to this headline">#</a></h1>
-<p><em>Last updated:</em> Sep 22, 2017</p>
-<p>Templates and links to other resources for creating technical documentation for
-Rackspace products and services.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="how-to-task-template.html">How-to task template</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="how-to-task-template.html#prerequisites">Prerequisites</a></li>
-<li class="toctree-l2"><a class="reference internal" href="how-to-task-template.html#steps">Steps</a></li>
-<li class="toctree-l2"><a class="reference internal" href="how-to-task-template.html#troubleshooting">Troubleshooting</a></li>
-<li class="toctree-l2"><a class="reference internal" href="how-to-task-template.html#related-information">Related information</a></li>
-<li class="toctree-l2"><a class="reference internal" href="how-to-task-template.html#next-step">Next step</a></li>
+  <div class="section" id="markup-guidelines">
+<span id="id1"></span><h1>Markup guidelines<a class="headerlink" href="#markup-guidelines" title="Permalink to this headline">#</a></h1>
+<p>This section of the style guide provides detailed guidelines about
+and instructions for applying markup conventions for ReStructure Text (RST)
+and MarkDown (MD).</p>
+<div class="section" id="restructured-text-rst">
+<h2>ReStructured Text (RST)<a class="headerlink" href="#restructured-text-rst" title="Permalink to this headline">#</a></h2>
+<p>Rackspace documentation uses reStructuredText (RST) markup syntax
+with Sphinx extensions.</p>
+<p>RST is a powerful and straightforward markup language that, in
+combination with Sphinx, provides a wide range of facilities for
+intelligent and appealing documentation creation. It uses simple
+and implicit syntax to introduce a variety of content elements such
+as titles, code blocks, vertical lists, and many others. All the
+source content formatted using RST is stored in files with the <code class="docutils literal"><span class="pre">.rst</span></code>
+extension.</p>
+<p>For more information on the RST conventions the Information Development team
+follows, see the following resources:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://docs.openstack.org/contributor-guide/rst-conv.html">OpenStack RST conventions</a>.</li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="ISSUE_TEMPLATE.html">Report an issue with the documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="PULL_REQUEST_TEMPLATE.html">Quality audit reminder</a></li>
+</div>
+<div class="section" id="markdown-md">
+<h2>MarkDown (MD)<a class="headerlink" href="#markdown-md" title="Permalink to this headline">#</a></h2>
+<p>MD is a straightforward markup language that uses simple and implicit
+syntax to introduce a variety of content elements. All the source
+content formatted using MD is stored in files with the <code class="docutils literal"><span class="pre">.md</span></code> extension.</p>
+<p>To keep the documentation format consistent, follow the guidelines
+included in this chapter for all the MD source content.</p>
+<p>For more information on MD conventions, see the following
+resources:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists">Markdown Cheatsheet</a></li>
 </ul>
 </div>
 </div>
@@ -197,10 +225,10 @@ Rackspace products and services.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="how-to-task-template.html" class="btn btn-neutral float-right" title="How-to task template" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="terminology/index.html" class="btn btn-neutral float-right" title="Terminology guidelines" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../style-guide/revision-history.html" class="btn btn-neutral" title="Style guide revision history" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="style/urls.html" class="btn btn-neutral" title="URLs and domain names" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
