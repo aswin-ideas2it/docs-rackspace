@@ -58,19 +58,20 @@ Architects, and Editors.
 
 Following are the members of the team:
 
-* **Senior Manager: Christie Lenneville**
+* Director (RED): Christie Lenneville (San Antonio)
 
-* Karin Levenstein (IRC: klevenstein) - Manager of Austin, US team
+* Karin Levenstein (Austin) - Manager of Information Development
 
-  * Catherine Richardson (IRC: cathrichardson) - Senior Information Developer
-  * Robb Romans (IRC: rromans) - Senior Information Developer
-  * Erik Wilson (IRC: erikmwilson) - Senior Information Developer
+  * Catherine Richardson - Senior Information Developer, Austin
+  * Erik Wilson - Senior Information Developer
+  * Robb Romans - Senior Informationm Developer, Austin
 
-* Renee Rendon - Manager of San Antonio, US team
+* Renee Rendon (San Antonio) - Team Lead for San Antonio Information Developers
 
-  * Nate Archer - Information Developer
-  * Stephanie Fillmon - Information Developer
-  * Cat Lookabaugh (IRC: catlook) - Senior Information Developer
+  * Cat Lookabaugh - Senior Information Developer, San Antonio
+  * Nate Archer - Information Developer, San Antonio
+  * Stephanie Fillmon - Information Developer, San Antonio
+
 
 Rackspace Private Cloud documentation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
