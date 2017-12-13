@@ -62,17 +62,14 @@ Following are the members of the team:
 
 * Karin Levenstein (IRC: klevenstein) - Manager of Austin, US team
 
-  * Kelly Holcomb - Editor
   * Catherine Richardson (IRC: cathrichardson) - Senior Information Developer
   * Robb Romans (IRC: rromans) - Senior Information Developer
-  * Alexandra Settle (IRC: asettle) - Information Developer
   * Erik Wilson (IRC: erikmwilson) - Senior Information Developer
 
 * Renee Rendon - Manager of San Antonio, US team
 
   * Nate Archer - Information Developer
   * Stephanie Fillmon - Information Developer
-  * Laura Santamaria - Information Developer
   * Cat Lookabaugh (IRC: catlook) - Senior Information Developer
 
 Rackspace Private Cloud documentation
