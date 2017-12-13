@@ -57,25 +57,19 @@ Architects, and Editors.
 
 Following are the members of the team:
 
-* **Senior Manager: Laura Clymer (IRC: onthecly)**
+* Director (RED): Christie Lenneville (San Antonio)
 
-* Karin Levenstein (IRC: klevenstein) - Manager of Austin, US team
+* Karin Levenstein (Austin) - Manager - Informatation Development
 
-  * Kelly Holcomb - Editor
-  * Catherine Richardson (IRC: cathrichardson) - Senior Information Developer,
-    RPC and Public Cloud
-  * Robb Romans (IRC: rromans) - Senior Information Developer, RPC and OSA
-  * Alexandra Settle (IRC: asettle) - Information Developer, RPC and
-    OSA
-  * Erik Wilson (IRC: erikmwilson) - Senior Information Developer, RPC
+  * Catherine Richardson - Senior Information Developer, Austin
+  * Robb Romans - Senior Information Developer, Austin
+  * Erik Wilson - Senior Information Developer, Austin
 
-* Renee Rendon - Manager of San Antonio, US team
+* Renee Rendon (San Antonio) - Team lead for San Antonio Information Developers
 
-  * Nate Archer - Information Developer, How-To
-  * Stephanie Fillmon - Information Developer, How-To
-  * Laura Santamaria - Information Developer, How-To
-  * Cat Lookabaugh (IRC: catlook) - Senior Information Developer, How-To,
-    Public Cloud
+  * Nate Archer - Information Developer, San Antonio
+  * Stephanie Fillmon - Information Developer, San Antonio
+  * Cat Lookabaugh - Senior Information Developer, San Antonio
 
 
 API documentation
