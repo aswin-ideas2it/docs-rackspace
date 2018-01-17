@@ -10,3 +10,5 @@ You'll find the source files to generate these publications.
 
 * Contributor guide
 * Rackspace Glossary
+
+Chris' test 1/17/2018
