@@ -1,4 +1,4 @@
-.._clone-a-repository
+.. _clone-a-repository:
 
 ==============
 Clone a repository
