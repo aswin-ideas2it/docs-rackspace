@@ -20,7 +20,7 @@ reflects a production-ready state, which is the most up-to-date docs.
 1. Log in to ``Rackerlabs`` or ``IX`` and locate the repository you want to fork.
 
 2. Click the repository, and click **Fork**, which is in the upper right-hand
-side of the page.
+   side of the page.
 
 3. When prompted, click your profile.
 
