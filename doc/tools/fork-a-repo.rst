@@ -1,5 +1,4 @@
 .. _fork-a-repository:
-
 ===================
 Fork a repository
 ===================
