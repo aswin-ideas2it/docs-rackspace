@@ -1,8 +1,8 @@
 .. _fork-a-repository:
 
-=================
+===================
 Fork a repository
-=================
+===================
 
 After you create your GitHub account, to see a list of external
 repositories go to https://github.com/rackerlabs. For a list of internal
@@ -27,4 +27,3 @@ branch reflects a production-ready state, which is the most up-to-date docs.
 3. When prompted, click your profile.
 
    GitHub adds the forked branch to your GitHub account.
-   
