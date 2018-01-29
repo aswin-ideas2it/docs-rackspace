@@ -30,7 +30,6 @@ a PR. The doc team will review and edit the changes as necessary.
 
 For additional information, see the following sections:
 
-
 * `Who is the doc team and what do we do?`_
 * `API documentation`_
 * `How-To and Control Panel articles`_
@@ -57,20 +56,21 @@ Architects, and Editors.
 
 Following are the members of the team:
 
-* Director (RED): Christie Lenneville (San Antonio)
+* Christie Lenneville - Rackspace Experience Design (RED) Director, San Antonio
 
-* Karin Levenstein (Austin) - Manager - Informatation Development
+* Karin Levenstein - Information Development Manager, Austin
 
-  * Catherine Richardson - Senior Information Developer, Austin
-  * Robb Romans - Senior Information Developer, Austin
+  * Catherine Richardson - Senior Technical Editor, Austin
+  * Christopher Moyer - Senior Information Developer, Austin
   * Erik Wilson - Senior Information Developer, Austin
+  * Kate Dougherty - Information Developer, Work from Home
+  * Robb Romans - Senior Information Developer, Austin
 
 * Renee Rendon (San Antonio) - Team lead for San Antonio Information Developers
 
+  * Cat Lookabaugh - Senior Information Developer, San Antonio
   * Nate Archer - Information Developer, San Antonio
   * Stephanie Fillmon - Information Developer, San Antonio
-  * Cat Lookabaugh - Senior Information Developer, San Antonio
-
 
 API documentation
 ~~~~~~~~~~~~~~~~~

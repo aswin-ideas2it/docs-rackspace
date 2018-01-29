@@ -58,20 +58,15 @@ Architects, and Editors.
 
 Following are the members of the team:
 
-* Director (RED): Christie Lenneville (San Antonio)
+* Christie Lenneville - Rackspace Experience Design (RED) Director, San Antonio
 
-* Karin Levenstein (Austin) - Manager of Information Development
+* Karin Levenstein - Information Development Manager, Austin
 
-  * Catherine Richardson - Senior Information Developer, Austin
-  * Erik Wilson - Senior Information Developer
-  * Robb Romans - Senior Informationm Developer, Austin
-
-* Renee Rendon (San Antonio) - Team Lead for San Antonio Information Developers
-
-  * Cat Lookabaugh - Senior Information Developer, San Antonio
-  * Nate Archer - Information Developer, San Antonio
-  * Stephanie Fillmon - Information Developer, San Antonio
-
+  * Catherine Richardson - Senior Technical Editor, Austin
+  * Erik Wilson - Senior Information Developer, Austin
+  * Matt Penna - Senior Information Developer, Work from Home
+  * Robb Romans - Senior Information Developer, Austin
+  * Svetlana Karslioglu - Information Developer, Work from Home
 
 Rackspace Private Cloud documentation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -191,7 +186,6 @@ instructions:
   <https://github.com/rackerlabs/docs-rpc/blob/master/GITHUBING.rst>`_
 * `Contributor guidelines
   <https://github.com/rackerlabs/docs-rpc/blob/master/CONTRIBUTING.rst>`_
-
 
 OpenStack-Ansible (OSA) documentation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

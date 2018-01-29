@@ -18,5 +18,6 @@ How to use the Cloud documentation team tools.
    mdsphinx.rst
    rtd-tables.rst
    table-conversion.rst
+   deconst-local.rst
    use-extlink-library.rst
    GitHub-infra-templates/index.rst

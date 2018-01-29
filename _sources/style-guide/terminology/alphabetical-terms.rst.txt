@@ -2491,7 +2491,7 @@ parts of speech:
        nonrestrictive clause occurs in midsentence, set the clause off with
        commas.
 
-       See also :ref:`restrictive-clauses`.
+       See also :ref:`restrictive clauses<restrictive-clauses>`.
 
        *Use:*
 
