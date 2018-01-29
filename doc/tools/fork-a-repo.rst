@@ -4,7 +4,7 @@
 Fork a repository
 ===================
 
-After you have created your GitHub account, to see a list of external
+After you create your GitHub account, to see a list of external
 repositories go to https://github.com/rackerlabs. For a list of internal
 repositories, go to https://github.rackspace.com/IX. For Information
 Development projects, you will most likely work with multiple repositories.
