@@ -5,8 +5,7 @@ Fork a repository
 ===================
 
 After you create your GitHub account, to see a list of external
-repositories go to https://github.com/rackerlabs. For a list of internal
-repositories, go to https://github.rackspace.com/IX. For Information
+repositories go to https://github.com/rackerlabs. For Information
 Development projects, you will most likely work with multiple repositories.
 Check with your team lead to identify the repositories with which you will
 work.
@@ -18,7 +17,7 @@ master branch https://github.rackspace.com/IX/docs-starter-kit becomes
 fork https://github.rackspace.com/cath6184/docs-starter-kit. The master
 branch reflects a production-ready state, which is the most up-to-date docs.
 
-1. Log in to ``Rackerlabs`` or ``IX`` and locate the repository you want to
+1. Log in to ``Rackerlabs`` and locate the repository you want to
    fork.
 
 2. Click the repository, and click **Fork**, which is in the upper right-hand
