@@ -27,6 +27,8 @@ set off a nonrestrictive clause with commas and the relative pronoun
      - The hourly backups are rolled into a nightly backup, **which is retained
        for two days**.
 
+.. _restrictive-clauses:
+
 Be sure to clarify restrictive clauses, as follows:
 
 -  Include the relative pronoun (usually *that*). You can identify

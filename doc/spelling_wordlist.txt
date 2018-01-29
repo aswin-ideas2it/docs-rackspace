@@ -136,6 +136,7 @@ Jing
 JRobinson
 js
 json
+Karslioglu
 Kbps
 Kibana
 kilobits
@@ -143,8 +144,8 @@ Kitematic
 klevenstein
 Laffoon
 LBaaS
-lcoation
 lede
+Lenneville
 Levenstein
 Lifecycle
 lighttpd
