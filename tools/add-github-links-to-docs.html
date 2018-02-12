@@ -218,10 +218,10 @@ the content they want to change.</p>
 <h2>Configuring GitHub links<a class="headerlink" href="#configuring-github-links" title="Permalink to this headline">#</a></h2>
 <blockquote>
 <div>You configure GitHub links for a documentation project by updating the
-<code class="docutils literal"><span class="pre">_deconst.json</span></code> file in the same directory as your documentation project
+<code class="docutils literal notranslate"><span class="pre">_deconst.json</span></code> file in the same directory as your documentation project
 configuration file as shown in the following examples.</div></blockquote>
-<p><strong>Example: Configuring an &quot;Edit on GitHub link&quot;</strong></p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span>
+<p><strong>Example: Configuring an “Edit on GitHub link”</strong></p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
   <span class="s2">&quot;contentIDBase&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/rackerlabs/$reponame/$version/&quot;</span><span class="p">,</span>
   <span class="s2">&quot;githubUrl&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/rackerlabs/$reponame/&quot;</span><span class="p">,</span>
   <span class="s2">&quot;githubBranch&quot;</span><span class="p">:</span> <span class="s2">&quot;master&quot;</span><span class="p">,</span>
@@ -233,8 +233,8 @@ configuration file as shown in the following examples.</div></blockquote>
 </div>
 <p>The <em>$reponame</em> and <em>$version</em> variables represent the values for each project.
 Not all projects have a version in the path.</p>
-<p><strong>Example: Configuring a &quot;Submit an issue&quot; link</strong></p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span>
+<p><strong>Example: Configuring a “Submit an issue” link</strong></p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
   <span class="s2">&quot;contentIDBase&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/rackerlabs/$reponame/$version&quot;</span><span class="p">,</span>
   <span class="s2">&quot;githubUrl&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/rackerlabs/docs-rackspace/&quot;</span><span class="p">,</span>
   <span class="s2">&quot;githubBranch&quot;</span><span class="p">:</span> <span class="s2">&quot;master&quot;</span><span class="p">,</span>
@@ -246,13 +246,13 @@ Not all projects have a version in the path.</p>
 </div>
 <p><strong>Configuration parameters</strong></p>
 <dl class="docutils">
-<dt><code class="docutils literal"><span class="pre">contentIDBase</span></code></dt>
+<dt><code class="docutils literal notranslate"><span class="pre">contentIDBase</span></code></dt>
 <dd>A unique ID that identifies the content repository to the Nexus
 publishing platform. The value specified must match the one specified
 in the <a class="reference external" href="https://github.com/rackerlabs/nexus-control/tree/master/config/content.d">deconst control repository configuration file</a>
 for the site where content is deployed. This value is required to build
 and deploy the content.</dd>
-<dt><code class="docutils literal"><span class="pre">githubUrl</span></code></dt>
+<dt><code class="docutils literal notranslate"><span class="pre">githubUrl</span></code></dt>
 <dd><p class="first">The base URL for constructing the GitHub links to display in the
 navigation menu. For <em>Edit on GitHub</em> links, specify the URL for the
 documentation source repository. For <em>Submit an issue</em> links, decide
@@ -266,15 +266,15 @@ another repository. Otherwise, the link target
 returns a 404 for users that cannot access the private repository.</p>
 </div>
 </dd>
-<dt><code class="docutils literal"><span class="pre">githubBranch</span></code></dt>
+<dt><code class="docutils literal notranslate"><span class="pre">githubBranch</span></code></dt>
 <dd>The target branch that determines the branch for submitting changes.
 If this value is not specified, it defaults to master. To override the
 default, set this parameter to the branch name.</dd>
-<dt><code class="docutils literal"><span class="pre">preferGithubIssues</span></code></dt>
+<dt><code class="docutils literal notranslate"><span class="pre">preferGithubIssues</span></code></dt>
 <dd><blockquote class="first">
 <div>Indicates the GitHub link type. Set this value to true
 to include the <em>Submit an issue</em> link. Set it to false to include an
-<em>Edit on GitHub</em> link.&quot;</div></blockquote>
+<em>Edit on GitHub</em> link.”</div></blockquote>
 <div class="last admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">For more information about the _deconst.json configuration parameters,

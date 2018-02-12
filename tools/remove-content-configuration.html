@@ -197,7 +197,7 @@ the content store:</p>
 For details, see the <a class="reference external" href="https://github.com/rackerlabs/docs-quickstart/blob/master/CONTRIBUTING.md">landing page contribution guidelines</a>.</p>
 </li>
 <li><p class="first">To prevent 404 errors from existing links and bookmarks, update
-the <code class="docutils literal"><span class="pre">rewrites.json</span></code> file to add a
+the <code class="docutils literal notranslate"><span class="pre">rewrites.json</span></code> file to add a
 <a class="reference internal" href="configure-redirects.html#configure-redirects"><span class="std std-ref">redirect rule</span></a>.</p>
 <ul class="simple">
 <li>If the content has been moved to an external site, redirect the old
@@ -210,7 +210,7 @@ explanation.</li>
 </ul>
 </li>
 <li><p class="first"><a class="reference internal" href="#delete-nexus-content"><span class="std std-ref">Delete content</span></a> that has already been deployed
-to <code class="docutils literal"><span class="pre">developer.rackspace.com</span></code>.</p>
+to <code class="docutils literal notranslate"><span class="pre">developer.rackspace.com</span></code>.</p>
 </li>
 </ol>
 <div class="section" id="housekeeping-tasks">
@@ -219,16 +219,16 @@ to <code class="docutils literal"><span class="pre">developer.rackspace.com</spa
 projects.</p>
 <ol class="arabic">
 <li><p class="first">Remove any project-specific entries from the nexus-control
-<a class="reference external" href="https://github.com/rackerlabs/nexus-control/blob/master/config/content.d/developer.rackspace.com.json">content mapping</a> (<code class="docutils literal"><span class="pre">content.d</span></code>) and <a class="reference external" href="https://github.com/rackerlabs/nexus-control/blob/master/config/route.d/developer.rackspace.com.json">template</a> (<code class="docutils literal"><span class="pre">route.d</span></code>) JSON files.</p>
-<p>You don't have to update these files if your project is configured in a
+<a class="reference external" href="https://github.com/rackerlabs/nexus-control/blob/master/config/content.d/developer.rackspace.com.json">content mapping</a> (<code class="docutils literal notranslate"><span class="pre">content.d</span></code>) and <a class="reference external" href="https://github.com/rackerlabs/nexus-control/blob/master/config/route.d/developer.rackspace.com.json">template</a> (<code class="docutils literal notranslate"><span class="pre">route.d</span></code>) JSON files.</p>
+<p>You don’t have to update these files if your project is configured in a
 group unless you want to remove the whole group. For example, to
 stop publishing all Rackspace Private Cloud v11 projects, delete
 the content mapping for the v11 branch of the docs-rpc GitHub repository.
 If you want to stop mapping private cloud content, remove the
-<code class="docutils literal"><span class="pre">docs/private-cloud</span></code> entry from the template file.</p>
+<code class="docutils literal notranslate"><span class="pre">docs/private-cloud</span></code> entry from the template file.</p>
 </li>
 <li><p class="first">If you are removing an entire repository or branch within a repository,
-edit the Strider build job inventory in the <code class="docutils literal"><span class="pre">content-repositories.json</span></code>
+edit the Strider build job inventory in the <code class="docutils literal notranslate"><span class="pre">content-repositories.json</span></code>
 file to remove the GitHub repository or branch name.</p>
 </li>
 </ol>
@@ -240,8 +240,8 @@ site managed by the nexus control repository.</p>
 <h4>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">#</a></h4>
 <ul class="simple">
 <li>You need an API key for the content service.</li>
-<li>You can't be on the VPN (because it blocks port 9000).</li>
-<li>It's helpful to have some kind of JSON formatter for your browser like
+<li>You can’t be on the VPN (because it blocks port 9000).</li>
+<li>It’s helpful to have some kind of JSON formatter for your browser like
 the <a class="reference external" href="https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa">Chrome JSON formatter</a>.</li>
 <li>A <a class="reference external" href="http://meyerweb.com/eric/tools/dencoder/">URL encoder</a> of some kind. I personally use the
 <a class="reference external" href="https://atom.io/packages/escape-utils">escape-utils Atom package</a>.</li>
@@ -249,34 +249,34 @@ the <a class="reference external" href="https://chrome.google.com/webstore/detai
 </div>
 <div class="section" id="list-content">
 <span id="id1"></span><h4>List content<a class="headerlink" href="#list-content" title="Permalink to this headline">#</a></h4>
-<p>Before deleting content in production, it's a good idea to make sure you know
-what you're about to delete. You can list the content IDs that are currently
+<p>Before deleting content in production, it’s a good idea to make sure you know
+what you’re about to delete. You can list the content IDs that are currently
 present in Nexus by visiting the <a class="reference external" href="https://developer.rackspace.com:9000/content/](https://developer.rackspace.com:9000/content/&gt;">content endpoint</a>.</p>
 <p>List content IDs that begin with a specific base by providing a URL-encoded
-<code class="docutils literal"><span class="pre">?prefix=</span></code> parameter as shown in the following example:</p>
-<div class="code console highlight-default"><div class="highlight"><pre><span></span>https://developer.rackspace.com:9000/content?prefix=https%3A%2F%2Fgithub.com%2Frackerlabs%2Fdocs-dedicated-vcloud&gt;`_
+<code class="docutils literal notranslate"><span class="pre">?prefix=</span></code> parameter as shown in the following example:</p>
+<div class="code console highlight-default notranslate"><div class="highlight"><pre><span></span>https://developer.rackspace.com:9000/content?prefix=https%3A%2F%2Fgithub.com%2Frackerlabs%2Fdocs-dedicated-vcloud&gt;`_
 </pre></div>
 </div>
 <p>Results are returned 100 at a time. You can paginate (awkwardly) by adding
-<code class="docutils literal"><span class="pre">&amp;pageNumber=2</span></code> to the end of the URL. The full documentation is in
+<code class="docutils literal notranslate"><span class="pre">&amp;pageNumber=2</span></code> to the end of the URL. The full documentation is in
 <a class="reference external" href="https://github.com/deconst/content-service#get-contentprefixid_prefixpagenumbernumperpagesize">content service README</a>.</p>
 </div>
 <div class="section" id="delete-content">
 <span id="id2"></span><h4>Delete content<a class="headerlink" href="#delete-content" title="Permalink to this headline">#</a></h4>
-<p>Delete individual envelopes by submitting a cURL <code class="docutils literal"><span class="pre">DELETE</span></code> request to the
+<p>Delete individual envelopes by submitting a cURL <code class="docutils literal notranslate"><span class="pre">DELETE</span></code> request to the
 content service API, using the URL-encoded content ID:</p>
-<div class="code console highlight-default"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">APIKEY</span><span class="o">=</span><span class="s2">&quot;...&quot;</span>
+<div class="code console highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">APIKEY</span><span class="o">=</span><span class="s2">&quot;...&quot;</span>
 
 <span class="n">curl</span> <span class="o">-</span><span class="n">X</span> <span class="n">DELETE</span> \
      <span class="o">-</span><span class="n">H</span> <span class="s2">&quot;Authorization: deconst $</span><span class="si">{APIKEY}</span><span class="s2">&quot;</span> \
      <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">developer</span><span class="o">.</span><span class="n">rackspace</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="mi">9000</span><span class="o">/</span><span class="n">content</span><span class="o">/</span><span class="n">https</span><span class="o">%</span><span class="mi">3</span><span class="n">A</span><span class="o">%</span><span class="mi">2</span><span class="n">F</span><span class="o">%</span><span class="mi">2</span><span class="n">Fgithub</span><span class="o">.</span><span class="n">com</span><span class="o">%</span><span class="mi">2</span><span class="n">Frackerlabs</span><span class="o">%</span><span class="mi">2</span><span class="n">Fdocs</span><span class="o">-</span><span class="n">dedicated</span><span class="o">-</span><span class="n">vcloud</span>
 </pre></div>
 </div>
-<p>(You can copy and paste the <code class="docutils literal"><span class="pre">/content/...</span></code> bit from the <code class="docutils literal"><span class="pre">url</span></code> key in the
+<p>(You can copy and paste the <code class="docutils literal notranslate"><span class="pre">/content/...</span></code> bit from the <code class="docutils literal notranslate"><span class="pre">url</span></code> key in the
 search results in your browser.)</p>
-<p>To bulk delete <em>all</em> envelopes beneath a content ID base that you've removed or
-renamed, specify the <code class="docutils literal"><span class="pre">?prefix=true</span></code> parameter:</p>
-<div class="code console highlight-default"><div class="highlight"><pre><span></span>export APIKEY=&quot;...&quot;
+<p>To bulk delete <em>all</em> envelopes beneath a content ID base that you’ve removed or
+renamed, specify the <code class="docutils literal notranslate"><span class="pre">?prefix=true</span></code> parameter:</p>
+<div class="code console highlight-default notranslate"><div class="highlight"><pre><span></span>export APIKEY=&quot;...&quot;
 
 curl -X DELETE \
      -H &quot;Authorization: deconst ${APIKEY}&quot; \

@@ -221,13 +221,13 @@
 <span id="id1"></span><h1>Code examples<a class="headerlink" href="#code-examples" title="Permalink to this headline">#</a></h1>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">For more information about formatting code, see the &quot;Code&quot; row in
+<p class="last">For more information about formatting code, see the “Code” row in
 the Text formatting topic.</p>
 </div>
 <p>Use the following guidelines when creating blocks of code as input
 or output examples:</p>
 <ul>
-<li><p class="first">Don't use screenshots to show code examples. Format them as blocks
+<li><p class="first">Don’t use screenshots to show code examples. Format them as blocks
 of code by using the appropriate markup in your authoring tool. For
 more information about formatting, see <a class="reference internal" href="text-formatting.html#text-formatting"><span class="std std-ref">Text formatting</span></a>.</p>
 </li>
@@ -239,7 +239,7 @@ arguments or parameters, explain those. If the user should expect
 something specific in the output, or you want to show only part of
 lengthy output, provide an explanation.</p>
 </li>
-<li><p class="first">When the command is simple, and there's nothing specific to say
+<li><p class="first">When the command is simple, and there’s nothing specific to say
 about the output, you can show the input and output in the same code
 block, as users would actually see the code in their own terminal.
 The inclusion of the command prompt differentiates the input from
@@ -251,7 +251,7 @@ the output.</p>
 enclose them in angle brackets.</p>
 </li>
 <li><p class="first">Use lowercase letters for single-word placeholders. To show multiple-word
-placeholders, don't separate the words with spaces or symbols and
+placeholders, don’t separate the words with spaces or symbols and
 capitalize the first letter of each word after the first word (camelCase).</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -281,24 +281,24 @@ they appear in the code block.</p>
 <ol class="arabic">
 <li><p class="first">Show all the available virtual machines (VMs) that are running
 Docker.</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span>$ docker-machine ls
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span>$ docker-machine ls
 </pre></div>
 </div>
 <p>If you have not created any VMs yet, your output should look as follows:</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">NAME</span> <span class="n">ACTIVE</span> <span class="n">DRIVER</span> <span class="n">STATE</span> <span class="n">URL</span>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">NAME</span> <span class="n">ACTIVE</span> <span class="n">DRIVER</span> <span class="n">STATE</span> <span class="n">URL</span>
 </pre></div>
 </div>
 </li>
-<li><p class="first">Create a VM that's running Docker.</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span>$ docker-machine create --driver virtualbox test
+<li><p class="first">Create a VM that’s running Docker.</p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span>$ docker-machine create --driver virtualbox test
 </pre></div>
 </div>
-<p>The <code class="docutils literal"><span class="pre">--driver</span></code> flag indicates what type of driver the machine runs
-on. In this case, <code class="docutils literal"><span class="pre">virtualbox</span></code> indicates that the driver is Oracle
+<p>The <code class="docutils literal notranslate"><span class="pre">--driver</span></code> flag indicates what type of driver the machine runs
+on. In this case, <code class="docutils literal notranslate"><span class="pre">virtualbox</span></code> indicates that the driver is Oracle
 VirtualBox. The final argument in the command gives the VM a name, in
-this case, <code class="docutils literal"><span class="pre">test</span></code>.</p>
+this case, <code class="docutils literal notranslate"><span class="pre">test</span></code>.</p>
 <p>The output should look as follows:</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">Creating</span> <span class="n">VirtualBox</span> <span class="n">VM</span><span class="o">...</span>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Creating</span> <span class="n">VirtualBox</span> <span class="n">VM</span><span class="o">...</span>
 <span class="n">Creating</span> <span class="n">SSH</span> <span class="n">key</span><span class="o">...</span>
 <span class="n">Starting</span> <span class="n">VirtualBox</span> <span class="n">VM</span><span class="o">...</span>
 <span class="n">Starting</span> <span class="n">VM</span><span class="o">...</span>
@@ -309,7 +309,7 @@ this case, <code class="docutils literal"><span class="pre">test</span></code>.<
 </li>
 <li><p class="first">Run docker-machine ls again to see the VM that you created.</p>
 <p>The output should look as follows:</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">NAME</span> <span class="n">ACTIVE</span> <span class="n">DRIVER</span> <span class="n">STATE</span> <span class="n">URL</span> <span class="n">SWARM</span>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">NAME</span> <span class="n">ACTIVE</span> <span class="n">DRIVER</span> <span class="n">STATE</span> <span class="n">URL</span> <span class="n">SWARM</span>
 <span class="n">test</span> <span class="n">virtualbox</span> <span class="n">Running</span> <span class="n">tcp</span><span class="p">:</span><span class="o">//</span><span class="mf">192.168</span><span class="o">.</span><span class="mf">99.101</span><span class="p">:</span><span class="mi">237</span>
 </pre></div>
 </div>
@@ -322,7 +322,7 @@ this case, <code class="docutils literal"><span class="pre">test</span></code>.<
 <li><p class="first">Run a container from the image. The application code uses the
 environment variables that you defined to connect to the MongoDB
 container.</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span>$ docker run --detach \
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span>$ docker run --detach \
   --env MONGO_HOST=$MONGO_HOST \ env MONGO_PORT=$MONGO_PORT \ env
   --MONGO_SSL=$MONGO_SSL \ env MONGO_DATABASE=$MONGO_DATABASE \ env
   --MONGO_USER=$MONGO_USER \ env MONGO_PASSWORD=$MONGO_PASSWORD \ publish
@@ -331,29 +331,29 @@ container.</p>
 </pre></div>
 </div>
 </li>
-<li><p class="first">View the status of the container by using the <code class="docutils literal"><span class="pre">--latest</span></code> parameter.</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span>$ docker ps --latest
+<li><p class="first">View the status of the container by using the <code class="docutils literal notranslate"><span class="pre">--latest</span></code> parameter.</p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span>$ docker ps --latest
 </pre></div>
 </div>
 </li>
 </ol>
-<p>The status of the container should begin with <code class="docutils literal"><span class="pre">Up</span></code>.</p>
+<p>The status of the container should begin with <code class="docutils literal notranslate"><span class="pre">Up</span></code>.</p>
 </div>
 <div class="section" id="remove-the-containers-already-using-the-port">
 <h2>Remove the containers already using the port<a class="headerlink" href="#remove-the-containers-already-using-the-port" title="Permalink to this headline">#</a></h2>
 <ol class="arabic">
 <li><p class="first">To identify the containers that are using the port, run the following
-command, changing <code class="docutils literal"><span class="pre">&lt;port&gt;</span></code> to the port number that you want to use.</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span>$ docker ps -a | grep &lt;port&gt;/tcp
+command, changing <code class="docutils literal notranslate"><span class="pre">&lt;port&gt;</span></code> to the port number that you want to use.</p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span>$ docker ps -a | grep &lt;port&gt;/tcp
 </pre></div>
 </div>
 </li>
 <li><p class="first">To remove the containers, run the following command for each
-container identified in step 1, changing <code class="docutils literal"><span class="pre">&lt;containerId&gt;</span></code> to the ID
+container identified in step 1, changing <code class="docutils literal notranslate"><span class="pre">&lt;containerId&gt;</span></code> to the ID
 of the container.</p>
-<p>The <code class="docutils literal"><span class="pre">--force</span></code> argument ensures that the container is removed even
-if it's currently running.</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">rm</span> <span class="o">--</span><span class="n">force</span> <span class="o">--</span><span class="n">volumes</span> <span class="o">&lt;</span><span class="n">containerId</span><span class="o">&gt;</span>
+<p>The <code class="docutils literal notranslate"><span class="pre">--force</span></code> argument ensures that the container is removed even
+if it’s currently running.</p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">rm</span> <span class="o">--</span><span class="n">force</span> <span class="o">--</span><span class="n">volumes</span> <span class="o">&lt;</span><span class="n">containerId</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 </li>
@@ -363,13 +363,13 @@ if it's currently running.</p>
 <h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">#</a></h2>
 <p>Sometimes, when you use a docker command, you receive the following
 output:</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span>$ docker info Get http:///var/run/docker.sock/v1.20/info: dial unix
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span>$ docker info Get http:///var/run/docker.sock/v1.20/info: dial unix
 /var/run/docker.sock: no such file or directory.
 * Are you trying to connect to a TLS-enabled daemon without TLS?
 * Is your docker daemon up and running?
 </pre></div>
 </div>
-<p>If you receive this output, your VM isn't running on a Docker host.</p>
+<p>If you receive this output, your VM isn’t running on a Docker host.</p>
 </div>
 </div>
 

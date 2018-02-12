@@ -208,18 +208,18 @@ sent to a new location instead of getting a 404.</p>
 </ul>
 <p>Archived sites:</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">docs.rackspace.com</span></code></li>
-<li><code class="docutils literal"><span class="pre">api.rackspace.com</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">docs.rackspace.com</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">api.rackspace.com</span></code></li>
 </ul>
 <p>Each file contains the rewrite rules for the specified domain, for example
-<code class="docutils literal"><span class="pre">developer.rackspace.com.json</span></code> specifies the rules to rewrite URLs or
+<code class="docutils literal notranslate"><span class="pre">developer.rackspace.com.json</span></code> specifies the rules to rewrite URLs or
 URL patterns from that site to a specified URL.</p>
-<p>For each rule, the <code class="docutils literal"><span class="pre">from</span></code> parameter specifies the URL to
-be redirected. The <code class="docutils literal"><span class="pre">to</span></code> parameter specifies the target destination for the
+<p>For each rule, the <code class="docutils literal notranslate"><span class="pre">from</span></code> parameter specifies the URL to
+be redirected. The <code class="docutils literal notranslate"><span class="pre">to</span></code> parameter specifies the target destination for the
 redirected link.</p>
 <p><strong>Example: Redirect traffic from a legacy Cloud Images API developer guide
 link</strong></p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">{</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
    <span class="s2">&quot;description&quot;</span><span class="o">:</span> <span class="s2">&quot;Redirect images developer-guide URL&quot;</span><span class="p">,</span>
    <span class="s2">&quot;from&quot;</span><span class="o">:</span> <span class="s2">&quot;^\\/docs\\/cloud-images\\/v2\\/developer-guide\\/(.*?)&quot;</span><span class="p">,</span>
    <span class="s2">&quot;to&quot;</span><span class="o">:</span> <span class="s2">&quot;/docs/cloud-images/v2/$1&quot;</span><span class="p">,</span>
@@ -230,15 +230,15 @@ link</strong></p>
 </div>
 <p>This example from the developer.rackspace.com redirects file redirects any
 URL that matches the following pattern:</p>
-<p><code class="docutils literal"><span class="pre">https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/*.*</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/*.*</span></code></p>
 <p>to the following URL:</p>
-<p><code class="docutils literal"><span class="pre">https://developer.rackspace.com/docs/cloud-images/v2/&lt;filename&gt;</span></code></p>
-<p>This rule specifies the <code class="docutils literal"><span class="pre">$1</span></code> pattern to append the final node
+<p><code class="docutils literal notranslate"><span class="pre">https://developer.rackspace.com/docs/cloud-images/v2/&lt;filename&gt;</span></code></p>
+<p>This rule specifies the <code class="docutils literal notranslate"><span class="pre">$1</span></code> pattern to append the final node
 of the original URL to the new path.</p>
 <p>For example, a request for the following URL:</p>
-<p><code class="docutils literal"><span class="pre">https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/glossary/</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/glossary/</span></code></p>
 <p>redirects the user to the following URL:</p>
-<p><code class="docutils literal"><span class="pre">https://developer.rackspace.com/docs/cloud-images/v2/glossary/</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">https://developer.rackspace.com/docs/cloud-images/v2/glossary/</span></code></p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">You can specify redirect rules by using glob patterns to match a set of
@@ -255,7 +255,7 @@ documentation project, place a rule to redirect a specific page in the content
 above a rule that redirects the top-level page as shown in the following
 example.</p>
 <p><strong>Example: Order redirect rules</strong></p>
-<div class="code JSON highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span>
+<div class="code JSON highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
    <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Reach Cloud Monitoring Metrics API Link&quot;</span><span class="p">,</span>
    <span class="s2">&quot;from&quot;</span><span class="p">:</span> <span class="s2">&quot;^/cm/api/v1.0/cm-devguide/content/metrics-api.html&quot;</span><span class="p">,</span>
    <span class="s2">&quot;to&quot;</span><span class="p">:</span> <span class="s2">&quot;/docs/rackspace-monitoring/v1/api-reference/metrics-operations/&quot;</span><span class="p">,</span>
@@ -290,7 +290,7 @@ the index page and the more specific rule would not be processed.</p>
 <li><p class="first">Fork and clone the nexus-control repository.</p>
 </li>
 <li><p class="first">On your local system, navigate to the following directory:
-<code class="docutils literal"><span class="pre">config/rewrites.d</span></code>.</p>
+<code class="docutils literal notranslate"><span class="pre">config/rewrites.d</span></code>.</p>
 </li>
 <li><p class="first">Edit the rewrites file for the site that controls the traffic you want to
 redirect.</p>
@@ -298,13 +298,13 @@ redirect.</p>
 <li><p class="first">Determine where to add the rule.</p>
 <ul class="simple">
 <li>Find similar rules and insert or append your rule to that group.</li>
-<li>Verify that traffic from the specified location won't be redirected
+<li>Verify that traffic from the specified location won’t be redirected
 by a preceding rule.</li>
 </ul>
 </li>
 <li><p class="first">Add the rule.</p>
 <p>If you are redirecting a URL from one domain to another, make sure
-that you specify the <code class="docutils literal"><span class="pre">ToHostName</span></code> parameter in the redirect rule.</p>
+that you specify the <code class="docutils literal notranslate"><span class="pre">ToHostName</span></code> parameter in the redirect rule.</p>
 </li>
 <li><p class="first">Commit your changes and push to GitHub.</p>
 </li>
@@ -323,15 +323,15 @@ can take time for the changes to be deployed to production.
 You can check the status of the update in <a class="reference external" href="https://build.developer.rackspace.com/rackerlabs/nexus-control/">nexus-control build results</a>.
 When the updates have been successfully deployed, the log shows the
 following message:</p>
-<div class="code console highlight-default"><div class="highlight"><pre><span></span><span class="n">Done</span><span class="p">,</span> <span class="n">without</span> <span class="n">errors</span><span class="o">.</span>
+<div class="code console highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Done</span><span class="p">,</span> <span class="n">without</span> <span class="n">errors</span><span class="o">.</span>
 <span class="n">Asset</span> <span class="n">preparer</span> <span class="n">completed</span><span class="o">.</span> <span class="p">{</span> <span class="n">status</span><span class="p">:</span> <span class="mi">0</span> <span class="p">}</span>
 <span class="n">All</span> <span class="n">assets</span> <span class="kn">from</span> <span class="nn">repository</span> <span class="n">uploaded</span><span class="o">.</span>
 </pre></div>
 </div>
 <p>After the changes are deployed to production, test the redirect rule.</p>
 <p>In the browser, navigate to a URL that matches the one specified in the
-<code class="docutils literal"><span class="pre">from</span></code> parameter of the redirect rule and verify that the browser directs you
-to a URL that matches the one specified in the <code class="docutils literal"><span class="pre">to</span></code> parameter.</p>
+<code class="docutils literal notranslate"><span class="pre">from</span></code> parameter of the redirect rule and verify that the browser directs you
+to a URL that matches the one specified in the <code class="docutils literal notranslate"><span class="pre">to</span></code> parameter.</p>
 <p>If the browser returns a 404 page or a different URL, update the rewrite file
 to fix the issue.</p>
 </div>
@@ -342,10 +342,10 @@ to fix the issue.</p>
 <p>If you have a missing comma or other syntax error in the rewrite JSON file,
 the redirect configuration does not work.</p>
 <p>To resolve the problem, use a <a class="reference external" href="http://jsonlint.com/">JSON linter</a> to verify the rewrite file syntax.</p>
-<p>If you don't find any errors, make sure that you have a comma between redirect
-rules as shown in the following example from the <code class="docutils literal"><span class="pre">api.rackspace.com</span></code> rewrites
+<p>If you don’t find any errors, make sure that you have a comma between redirect
+rules as shown in the following example from the <code class="docutils literal notranslate"><span class="pre">api.rackspace.com</span></code> rewrites
 file.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">{</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
    <span class="s2">&quot;api.rackspace.com&quot;</span><span class="o">:</span> <span class="p">[</span>
          <span class="p">{</span>
             <span class="s2">&quot;description&quot;</span><span class="o">:</span> <span class="s2">&quot;Redirect root traffic to developer.rs.com/docs/&quot;</span><span class="p">,</span>

@@ -198,20 +198,20 @@ see the <a class="reference external" href="https://github.com/deconst/integrate
 <li><p class="first">Install Docker for Mac from the Managed Software Center.</p>
 </li>
 <li><p class="first">Test everything is installed:</p>
-<div class="highlight-console"><div class="highlight"><pre><span></span><span class="go">docker --version</span>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">docker --version</span>
 <span class="go">docker-compose --version</span>
 <span class="go">docker-machine --version</span>
 </pre></div>
 </div>
 <p>Each command should return with the appropriate version numbers.
-For example, <code class="docutils literal"><span class="pre">Docker</span> <span class="pre">version</span> <span class="pre">17.03.1-ce,</span> <span class="pre">build</span> <span class="pre">c6d412e</span></code>.</p>
+For example, <code class="docutils literal notranslate"><span class="pre">Docker</span> <span class="pre">version</span> <span class="pre">17.03.1-ce,</span> <span class="pre">build</span> <span class="pre">c6d412e</span></code>.</p>
 </li>
 <li><p class="first">Create a new folder for your tool work. For example,
-<code class="docutils literal"><span class="pre">Users/alex7376/Tools</span></code>.</p>
+<code class="docutils literal notranslate"><span class="pre">Users/alex7376/Tools</span></code>.</p>
 </li>
 <li><p class="first">Download Kitematic: <a class="reference external" href="https://github.com/docker/kitematic/releases">https://github.com/docker/kitematic/releases</a>
 .. note:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">We</span> <span class="n">use</span> <span class="n">Kitematic</span> <span class="k">for</span> <span class="n">simplicity</span> <span class="ow">and</span> <span class="n">a</span> <span class="n">GUI</span><span class="o">-</span><span class="n">wrapped</span> <span class="n">way</span> <span class="n">of</span> <span class="n">managing</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">We</span> <span class="n">use</span> <span class="n">Kitematic</span> <span class="k">for</span> <span class="n">simplicity</span> <span class="ow">and</span> <span class="n">a</span> <span class="n">GUI</span><span class="o">-</span><span class="n">wrapped</span> <span class="n">way</span> <span class="n">of</span> <span class="n">managing</span>
 <span class="n">containers</span><span class="o">.</span> <span class="n">However</span><span class="p">,</span> <span class="n">this</span> <span class="ow">is</span>  <span class="n">a</span> <span class="n">beta</span> <span class="n">product</span><span class="o">.</span>
 </pre></div>
 </div>
@@ -219,13 +219,13 @@ For example, <code class="docutils literal"><span class="pre">Docker</span> <spa
 <li><p class="first">Install the Docker Toolbox for Mac:
 <a class="reference external" href="https://docs.docker.com/toolbox/toolbox_install_mac/">https://docs.docker.com/toolbox/toolbox_install_mac/</a></p>
 </li>
-<li><p class="first">Fork and clone the <code class="docutils literal"><span class="pre">deconst/integrated</span></code> repo into your <code class="docutils literal"><span class="pre">Tools</span></code>
+<li><p class="first">Fork and clone the <code class="docutils literal notranslate"><span class="pre">deconst/integrated</span></code> repo into your <code class="docutils literal notranslate"><span class="pre">Tools</span></code>
 folder: <a class="reference external" href="https://github.com/deconst/integrated/">https://github.com/deconst/integrated/</a></p>
 </li>
-<li><p class="first">Fork and clone the <code class="docutils literal"><span class="pre">nexus-control</span></code> repo into your <code class="docutils literal"><span class="pre">Tools</span></code>
+<li><p class="first">Fork and clone the <code class="docutils literal notranslate"><span class="pre">nexus-control</span></code> repo into your <code class="docutils literal notranslate"><span class="pre">Tools</span></code>
 folder: <a class="reference external" href="https://github.com/rackerlabs/nexus-control">https://github.com/rackerlabs/nexus-control</a></p>
 </li>
-<li><p class="first">Fork and clone <code class="docutils literal"><span class="pre">docs-rpc</span></code> and/or <code class="docutils literal"><span class="pre">rackspace-how-to</span></code>:</p>
+<li><p class="first">Fork and clone <code class="docutils literal notranslate"><span class="pre">docs-rpc</span></code> and/or <code class="docutils literal notranslate"><span class="pre">rackspace-how-to</span></code>:</p>
 <ul class="simple">
 <li><a class="reference external" href="https://github.com/rackerlabs/docs-rpc">https://github.com/rackerlabs/docs-rpc</a></li>
 <li><a class="reference external" href="https://github.com/rackerlabs/rackspace-how-to">https://github.com/rackerlabs/rackspace-how-to</a></li>
@@ -235,7 +235,7 @@ folder: <a class="reference external" href="https://github.com/rackerlabs/nexus-
 <p class="last">You can use any content repo, and here are some sample ones to use</p>
 </div>
 </li>
-<li><p class="first">In your clone of <code class="docutils literal"><span class="pre">deconst/integrated</span></code>, rename <cite>env.example</cite> to <cite>env</cite>
+<li><p class="first">In your clone of <code class="docutils literal notranslate"><span class="pre">deconst/integrated</span></code>, rename <cite>env.example</cite> to <cite>env</cite>
 and change the following lines:</p>
 <ul class="simple">
 <li>Line 12: enter the value 1111 after the equal sign.</li>
@@ -243,7 +243,7 @@ and change the following lines:</p>
 <cite>developer.rackspace.com</cite>.</li>
 <li>Line 30: enter the path to your nexus-control repo clone
 (e.g., <cite>/Users/laur0616/nexus-control</cite>).</li>
-<li>Line 66: enter &quot;true&quot; (with quotes) after the equal sign.</li>
+<li>Line 66: enter “true” (with quotes) after the equal sign.</li>
 </ul>
 </li>
 <li><p class="first">Open your terminal with two tabs or windows.</p>
@@ -282,7 +282,7 @@ restart everything in one of two ways:</p>
 and run the following command to stop all containers:</li>
 </ol>
 <blockquote>
-<div><div class="highlight-console"><div class="highlight"><pre><span></span><span class="go">docker stop $(docker ps -a -q)</span>
+<div><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">docker stop $(docker ps -a -q)</span>
 </pre></div>
 </div>
 </div></blockquote>

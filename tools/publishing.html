@@ -245,14 +245,14 @@ build job for your project.</p>
 <ol class="arabic">
 <li><p class="first">In the GitHub UI, click <span class="guilabel">Settings &gt; Collaborators &amp; teams</span>.</p>
 </li>
-<li><p class="first">Add the <code class="docutils literal"><span class="pre">rackernexus</span></code> service account as a collaborator with Admin
+<li><p class="first">Add the <code class="docutils literal notranslate"><span class="pre">rackernexus</span></code> service account as a collaborator with Admin
 privileges.</p>
-<p>GitHub will send an invitation requesting that <code class="docutils literal"><span class="pre">rackernexus</span></code> join the
+<p>GitHub will send an invitation requesting that <code class="docutils literal notranslate"><span class="pre">rackernexus</span></code> join the
 repository.</p>
 </li>
 <li><p class="first">In the <a class="reference external" href="https://rackdx.slack.com/archives/deconst">Deconst Slack channel</a>,
 request the deconst administrator to accept the GitHub invitation sent to
-the <code class="docutils literal"><span class="pre">rackernexus</span></code> service account.</p>
+the <code class="docutils literal notranslate"><span class="pre">rackernexus</span></code> service account.</p>
 </li>
 </ol>
 </li>
@@ -261,7 +261,7 @@ the <code class="docutils literal"><span class="pre">rackernexus</span></code> s
 <li><p class="first">In the content repository branch, navigate to the root folder for your
 documentation project.</p>
 </li>
-<li><p class="first">Add the <code class="file docutils literal"><span class="pre">_deconst.json</span></code>.</p>
+<li><p class="first">Add the <code class="file docutils literal notranslate"><span class="pre">_deconst.json</span></code>.</p>
 </li>
 <li><p class="first">Add the following parameters to the new file.</p>
 <ul class="simple">
@@ -269,14 +269,14 @@ documentation project.</p>
 this directory. It must be a unique ID to all content repositories
 published to Deconst.</li>
 <li>githubUrl: The GitHub URL for the content repository.</li>
-<li>githubBranch: Specifies the target branch for &quot;edit on GitHub&quot; link
-if your project is on a branch other than <code class="docutils literal"><span class="pre">master</span></code>.</li>
+<li>githubBranch: Specifies the target branch for “edit on GitHub” link
+if your project is on a branch other than <code class="docutils literal notranslate"><span class="pre">master</span></code>.</li>
 <li>preferGitHubIssues: Specifies whether the documentation interface
 provides a <cite>Submit issue</cite> link to open a GitHub issue or an
-'Edit on Github`link to edit documentation source.</li>
+‘Edit on Github`link to edit documentation source.</li>
 </ul>
 <p>For example:</p>
-<div class="code ini highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span>
+<div class="code ini highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="s2">&quot;contentIDBase&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/rackerlabs/docs-rpc/v13/&quot;</span><span class="p">,</span>
     <span class="s2">&quot;githubUrl&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/rackerlabs/docs-rackspace/&quot;</span><span class="p">,</span>
     <span class="s2">&quot;githubBranch&quot;</span><span class="p">:</span> <span class="s2">&quot;v13&quot;</span><span class="p">,</span>
@@ -291,9 +291,9 @@ provides a <cite>Submit issue</cite> link to open a GitHub issue or an
 </li>
 <li><p class="first">If the project is a development project, update the project configuration
 file to exclude the content from search indexing.</p>
-<p>For Sphinx projects, update the <code class="docutils literal"><span class="pre">conf.py</span></code> file with the following
+<p>For Sphinx projects, update the <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file with the following
 configuration settings:</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Exclude content from elastic search index</span>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Exclude content from elastic search index</span>
 <span class="n">deconst_default_unsearchable</span> <span class="o">=</span> <span class="kc">True</span>
 </pre></div>
 </div>
@@ -310,19 +310,19 @@ you can configure builds for one or more branches. By default, Strider builds
 from the master branch. If you want to build from other branches, you must
 specify the branch name.</p>
 <p><strong>Prerequisite</strong>
-The source repository must have the <code class="docutils literal"><span class="pre">rackernexus</span></code> GitHub ID configured as
+The source repository must have the <code class="docutils literal notranslate"><span class="pre">rackernexus</span></code> GitHub ID configured as
 an outside collaborator with Admin access.</p>
 <ol class="arabic">
 <li><p class="first">Add the repository to the <a class="reference external" href="https://github.com/rackerlabs/nexus-control/blob/master/content-repositories.json">content-repositories.json</a>
 file. For example:</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span> <span class="s2">&quot;kind&quot;</span><span class="p">:</span> <span class="s2">&quot;github&quot;</span><span class="p">,</span> <span class="s2">&quot;project&quot;</span><span class="p">:</span> <span class="s2">&quot;rackerlabs/docs-rpc&quot;</span> <span class="p">},</span>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span> <span class="s2">&quot;kind&quot;</span><span class="p">:</span> <span class="s2">&quot;github&quot;</span><span class="p">,</span> <span class="s2">&quot;project&quot;</span><span class="p">:</span> <span class="s2">&quot;rackerlabs/docs-rpc&quot;</span> <span class="p">},</span>
 </pre></div>
 </div>
 </li>
 <li><p class="first">To add builds for a specific branch, add the branch name.</p>
 <p>For example, the following specification shows the configuration to build
 from master, v10, v11, and v12 branches:</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span> <span class="s2">&quot;kind&quot;</span><span class="p">:</span> <span class="s2">&quot;github&quot;</span><span class="p">,</span> <span class="s2">&quot;project&quot;</span><span class="p">:</span> <span class="s2">&quot;rackerlabs/docs-rpc&quot;</span><span class="p">,</span> <span class="s2">&quot;branches&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">master</span><span class="p">,</span> <span class="s2">&quot;v10&quot;</span><span class="p">,</span> <span class="s2">&quot;v11&quot;</span><span class="p">,</span> <span class="s2">&quot;v12&quot;</span><span class="p">]</span> <span class="p">},</span>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span> <span class="s2">&quot;kind&quot;</span><span class="p">:</span> <span class="s2">&quot;github&quot;</span><span class="p">,</span> <span class="s2">&quot;project&quot;</span><span class="p">:</span> <span class="s2">&quot;rackerlabs/docs-rpc&quot;</span><span class="p">,</span> <span class="s2">&quot;branches&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">master</span><span class="p">,</span> <span class="s2">&quot;v10&quot;</span><span class="p">,</span> <span class="s2">&quot;v11&quot;</span><span class="p">,</span> <span class="s2">&quot;v12&quot;</span><span class="p">]</span> <span class="p">},</span>
 </pre></div>
 </div>
 </li>
@@ -335,24 +335,24 @@ indicating that the build ran successfully.</p>
 </div>
 <div class="section" id="configure-a-project-for-development-builds">
 <span id="configure-development-build"></span><h3>Configure a project for development builds<a class="headerlink" href="#configure-a-project-for-development-builds" title="Permalink to this headline">#</a></h3>
-<p>To configure a development build on a branch, update the <code class="docutils literal"><span class="pre">staging.horse</span></code>
+<p>To configure a development build on a branch, update the <code class="docutils literal notranslate"><span class="pre">staging.horse</span></code>
 site configuration in the nexus-control content and template mapping files.
 These files are in the nexus control repository that manages the
 build and deployment process for the Rackspace documentation websites.</p>
 <p>The content mapping file associates the content in a source repository with the
 URL where the content is deployed. The content source repository is identified
-by the unique content ID for the project, the <code class="docutils literal"><span class="pre">contentIDBase</span></code> specified in
-the <code class="docutils literal"><span class="pre">_deconst.json</span></code> file.</p>
+by the unique content ID for the project, the <code class="docutils literal notranslate"><span class="pre">contentIDBase</span></code> specified in
+the <code class="docutils literal notranslate"><span class="pre">_deconst.json</span></code> file.</p>
 <p>The template mapping file specifies the template applied to content when a user
 requests content. For example, for book-style content with previous and next
-links, use the <code class="docutils literal"><span class="pre">user-guide.html</span></code> template. For single page topics, use the
-<code class="docutils literal"><span class="pre">single-page.html</span></code> template.</p>
+links, use the <code class="docutils literal notranslate"><span class="pre">user-guide.html</span></code> template. For single page topics, use the
+<code class="docutils literal notranslate"><span class="pre">single-page.html</span></code> template.</p>
 <ol class="arabic">
 <li><p class="first">Add the content mapping to <a class="reference external" href="https://github.com/rackerlabs/nexus-control/blob/master/config/content.d/staging.horse.json">config/content.d/staging.horse.json</a>.</p>
 <p>The following example shows the specification to deploy content from the
-docs-rpc master branch to the <code class="docutils literal"><span class="pre">/docs/private-cloud/rpc/master/</span></code> path on
+docs-rpc master branch to the <code class="docutils literal notranslate"><span class="pre">/docs/private-cloud/rpc/master/</span></code> path on
 the development staging server:</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="s2">&quot;/docs/private-cloud/rpc/master/&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/rackerlabs/docs-rpc/master&quot;</span><span class="p">,</span>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;/docs/private-cloud/rpc/master/&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/rackerlabs/docs-rpc/master&quot;</span><span class="p">,</span>
 </pre></div>
 </div>
 </li>
@@ -360,7 +360,7 @@ the development staging server:</p>
 configuration file.</p>
 <p>The following example shows the mapping to apply the user guide template to
 all Rackspace Private Cloud content:</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="s2">&quot;^/docs/private-cloud/&quot;</span><span class="p">:</span> <span class="s2">&quot;developer.rackspace.com/user-guide.html&quot;</span><span class="p">,</span>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;^/docs/private-cloud/&quot;</span><span class="p">:</span> <span class="s2">&quot;developer.rackspace.com/user-guide.html&quot;</span><span class="p">,</span>
 </pre></div>
 </div>
 </li>
@@ -372,7 +372,7 @@ preview link to review your content. See
 <p>If the preview link fails, or if the
 formatting does not look right, verify that the nexus-control configuration
 includes the branch in the content and template mapping files, and that
-the repository has been added to the <code class="docutils literal"><span class="pre">content.repositories</span></code> file.</p>
+the repository has been added to the <code class="docutils literal notranslate"><span class="pre">content.repositories</span></code> file.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">You can move a project from development to production by
@@ -382,14 +382,14 @@ following the process to add a production build.</p>
 <div class="section" id="configure-a-project-for-production-builds">
 <span id="configure-production-build"></span><h3>Configure a project for production builds<a class="headerlink" href="#configure-a-project-for-production-builds" title="Permalink to this headline">#</a></h3>
 <p>If you want to build and deploy a project to production, update
-the nexus-control configuration files for <code class="docutils literal"><span class="pre">developer.rackspace.com</span></code> to
+the nexus-control configuration files for <code class="docutils literal notranslate"><span class="pre">developer.rackspace.com</span></code> to
 define the URL for content deployment and to specify the template to apply
 during the build process.</p>
 <ol class="arabic">
 <li><p class="first">Add the contentIDBase for the branch content to the
-<code class="docutils literal"><span class="pre">developer.rackspace.com</span></code> <a class="reference external" href="https://github.com/rackerlabs/nexus-control/blob/master/config/content.d/developer.rackspace.com.json">content.d/developer.rackspace.com.json</a>
+<code class="docutils literal notranslate"><span class="pre">developer.rackspace.com</span></code> <a class="reference external" href="https://github.com/rackerlabs/nexus-control/blob/master/config/content.d/developer.rackspace.com.json">content.d/developer.rackspace.com.json</a>
 configuration file. For example:</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="s2">&quot;/docs/private-cloud/rpc/v13/&quot;</span><span class="p">:</span><span class="s2">&quot;https://github.com/rackerlabs/docs-rpc/v13/&quot;</span><span class="p">,</span>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;/docs/private-cloud/rpc/v13/&quot;</span><span class="p">:</span><span class="s2">&quot;https://github.com/rackerlabs/docs-rpc/v13/&quot;</span><span class="p">,</span>
 </pre></div>
 </div>
 <div class="admonition note">
@@ -398,10 +398,10 @@ configuration file. For example:</p>
 in the content repository branch.</p>
 </div>
 </li>
-<li><p class="first">Check the <code class="docutils literal"><span class="pre">developer.rackspace.com</span></code> <a class="reference external" href="https://github.com/rackerlabs/nexus-control/blob/master/config/routes.d/developer.rackspace.com.json">routes.d/developer.rackspace.com.json</a>
+<li><p class="first">Check the <code class="docutils literal notranslate"><span class="pre">developer.rackspace.com</span></code> <a class="reference external" href="https://github.com/rackerlabs/nexus-control/blob/master/config/routes.d/developer.rackspace.com.json">routes.d/developer.rackspace.com.json</a>
 configuration file to confirm that a template has been listed for the
 URL pattern you specified for the branch. For example:</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="s2">&quot;^/docs/private-cloud/&quot;</span><span class="p">:</span> <span class="s2">&quot;user-guide.html&quot;</span><span class="p">,</span>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;^/docs/private-cloud/&quot;</span><span class="p">:</span> <span class="s2">&quot;user-guide.html&quot;</span><span class="p">,</span>
 </pre></div>
 </div>
 </li>
@@ -424,12 +424,12 @@ complete the nexus-control configuration updates to
 <li><p class="first">Review a list of Strider build jobs for documentation projects at
 <a class="reference external" href="https://build.developer.rackspace.com">https://build.developer.rackspace.com</a>.</p>
 <p>If you get a 404 error, log in with your
-GitHub ID. If you still can't view the builds, open an
+GitHub ID. If you still can’t view the builds, open an
 <a class="reference external" href="https://github.com/rackerlabs/docs-rackspace/issues/new">issue</a> to
 request access.</p>
 </li>
 <li><p class="first">To view builds for a repository, look for the build badge at the top of the
-<code class="docutils literal"><span class="pre">readme</span></code> file. It indicates whether the most recent build passed or failed.
+<code class="docutils literal notranslate"><span class="pre">readme</span></code> file. It indicates whether the most recent build passed or failed.
 Click the badge to open the build log.</p>
 </li>
 <li><p class="first">You can view the build log for a PR from the GitHub interface. When you
@@ -454,9 +454,9 @@ results are added to the PR.</p>
 the <cite>landing page &lt;https:\developer.rackspace.comdocs&gt;</cite>
 to add the documentation title to the documentation menu.</p>
 <ol class="arabic">
-<li><p class="first">Update the <code class="docutils literal"><span class="pre">conf.py</span></code> file in the new branch to restore search
+<li><p class="first">Update the <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file in the new branch to restore search
 indexing in production. Comment out the search index setting:</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Exclude content from elastic search index</span>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Exclude content from elastic search index</span>
 <span class="c1"># deconst_default_unsearchable = True</span>
 </pre></div>
 </div>
@@ -465,7 +465,7 @@ indexing in production. Comment out the search index setting:</p>
 add the new documents to the appropriate card on the
 <a class="reference external" href="https://developer.rackspace.com/docs/">developer.rackspace.com</a>
 landing page. For example:</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">h5</span><span class="o">&gt;</span><span class="n">Rackspace</span> <span class="n">Private</span> <span class="n">Cloud</span> <span class="n">v12</span><span class="o">&lt;/</span><span class="n">h5</span><span class="o">&gt;</span>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">h5</span><span class="o">&gt;</span><span class="n">Rackspace</span> <span class="n">Private</span> <span class="n">Cloud</span> <span class="n">v12</span><span class="o">&lt;/</span><span class="n">h5</span><span class="o">&gt;</span>
 <span class="o">&lt;</span><span class="n">ul</span><span class="o">&gt;</span>
     <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s2">&quot;/docs/private-cloud/rpc/v13/rpc-admin/&quot;</span><span class="o">&gt;</span><span class="n">Administrator</span> <span class="n">Guide</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
     <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s2">&quot;/docs/private-cloud/rpc/v13/rpc-faq-external/&quot;</span><span class="o">&gt;</span><span class="n">Technical</span> <span class="n">FAQ</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;&lt;/</span><span class="n">li</span><span class="o">&gt;</span>

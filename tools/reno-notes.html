@@ -200,12 +200,12 @@ automated documentation builds.</p>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">#</a></h2>
 <p>At the command line:</p>
-<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">$</span> pip install reno
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> pip install reno
 </pre></div>
 </div>
 <p>To use the Sphinx extension built into reno, install the [sphinx] extra
 dependencies:</p>
-<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">$</span> pip install <span class="s1">&#39;reno[sphinx]&#39;</span>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> pip install <span class="s1">&#39;reno[sphinx]&#39;</span>
 </pre></div>
 </div>
 </div>
@@ -215,21 +215,21 @@ dependencies:</p>
 the correct format and with a unique name. The new subcommand combines
 a random suffix with a “slug” value to create the file with a unique
 name that is easy to identify again later.</p>
-<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">$</span> reno new SLUG
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> reno new SLUG
 
 <span class="go">Created new notes file in releasenotes/notes/slug-goes-here-95915aaedd3c48d8.yaml</span>
 </pre></div>
 </div>
-<p>The <code class="docutils literal"><span class="pre">--edit</span></code> option opens the new note in a text editor:</p>
-<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">$</span> reno new slug-goes-here --edit
+<p>The <code class="docutils literal notranslate"><span class="pre">--edit</span></code> option opens the new note in a text editor:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> reno new slug-goes-here --edit
 
 <span class="go">... Opens the editor set in the EDITOR environment variable, editing the new file ...</span>
 
 <span class="go">Created new notes file in releasenotes/notes/slug-goes-here-95915aaedd3c48d8.yaml</span>
 </pre></div>
 </div>
-<p>By default, the new note is created under <code class="docutils literal"><span class="pre">./releasenotes/notes</span></code>.
-The <code class="docutils literal"><span class="pre">--rel-notes-dir</span></code> command-line flag changes the parent directory
+<p>By default, the new note is created under <code class="docutils literal notranslate"><span class="pre">./releasenotes/notes</span></code>.
+The <code class="docutils literal notranslate"><span class="pre">--rel-notes-dir</span></code> command-line flag changes the parent directory
 (the notes subdirectory is always appended). It’s also possible to set a
 custom template to create notes.</p>
 <p>For more configuration options, see
@@ -239,14 +239,14 @@ custom template to create notes.</p>
 <h2>Generating a report<a class="headerlink" href="#generating-a-report" title="Permalink to this headline">#</a></h2>
 <p>To run a reno report to generate a report containing the release notes,
 execute the following:</p>
-<div class="highlight-console"><div class="highlight"><pre><span></span><span class="gp">$</span> reno report &lt;path-to-git-repository&gt;
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> reno report &lt;path-to-git-repository&gt;
 </pre></div>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">The <code class="docutils literal"><span class="pre">--branch</span></code> argument can be used to generate a report for a specific
+<p class="last">The <code class="docutils literal notranslate"><span class="pre">--branch</span></code> argument can be used to generate a report for a specific
 branch (the default is the branch that is checked out). To limit the report
-to a subset of the available versions on the branch, use the <code class="docutils literal"><span class="pre">--version</span></code>
+to a subset of the available versions on the branch, use the <code class="docutils literal notranslate"><span class="pre">--version</span></code>
 option (it can be repeated).</p>
 </div>
 </div>

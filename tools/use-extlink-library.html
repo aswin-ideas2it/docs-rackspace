@@ -194,14 +194,14 @@ resources.</p>
 <li>If the URLs to common resources change, you can update the external link
 library URL specification in the configuration file instead of having to
 update every link to that resource in the documentation library.</li>
-<li>Link references are shorter so you don't have to make as many format
+<li>Link references are shorter so you don’t have to make as many format
 adjustments in tables and indented list to accommodate wrapping link text.</li>
 </ul>
 <p>The link library URL specification is defined in the Sphinx configuration file
 for each project.</p>
 <p><strong>Example: Common external link library definition from the Sphinx
 configuration file</strong></p>
-<div class="highlight-python"><div class="highlight"><pre><span></span> <span class="c1"># External link library</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span> <span class="c1"># External link library</span>
 
  <span class="n">extlinks</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;rax&#39;</span><span class="p">:</span> <span class="p">(</span><span class="s1">&#39;https://www.rackspace.com/</span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">),</span>
@@ -229,44 +229,44 @@ configuration file</strong></p>
 <div class="section" id="linking-examples">
 <h2>Linking examples<a class="headerlink" href="#linking-examples" title="Permalink to this headline">#</a></h2>
 <p>When you reference a link using the external link library, the reference
-identifier (<code class="docutils literal"><span class="pre">kc-faq</span></code>, <code class="docutils literal"><span class="pre">rax-dev</span></code>, <code class="docutils literal"><span class="pre">rax-devguide</span></code>) precedes the link label
+identifier (<code class="docutils literal notranslate"><span class="pre">kc-faq</span></code>, <code class="docutils literal notranslate"><span class="pre">rax-dev</span></code>, <code class="docutils literal notranslate"><span class="pre">rax-devguide</span></code>) precedes the link label
 and the part of the link reference that is variable as represented by the
-<code class="docutils literal"><span class="pre">%s</span></code> in the external link definition.</p>
+<code class="docutils literal notranslate"><span class="pre">%s</span></code> in the external link definition.</p>
 <p><strong>Link to DRC</strong></p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">rax</span><span class="o">-</span><span class="n">dev</span><span class="p">:</span><span class="s1">&#39;Rackspace Developer website &lt;&gt;`</span>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">rax</span><span class="o">-</span><span class="n">dev</span><span class="p">:</span><span class="s1">&#39;Rackspace Developer website &lt;&gt;`</span>
 </pre></div>
 </div>
 <p>Note that the link element is enclosed in &lt;&gt;. If the element is empty, the
 reference is replaced by the base url. In this example, the link reference is
-replaced by <code class="docutils literal"><span class="pre">developer.rackspace.com</span></code>.</p>
+replaced by <code class="docutils literal notranslate"><span class="pre">developer.rackspace.com</span></code>.</p>
 <p><strong>Link to the Docs page</strong></p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span>:rax-devdocs:`API Developer Guide &lt;&gt;`
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span>:rax-devdocs:`API Developer Guide &lt;&gt;`
 </pre></div>
 </div>
 <p><strong>Link to a specific Dev Guide</strong></p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span>:rax-devguide:`Cloud Images Developer Guide &lt;cloud-images/v2&gt;`
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span>:rax-devguide:`Cloud Images Developer Guide &lt;cloud-images/v2&gt;`
 </pre></div>
 </div>
-<p>In this example, the <code class="docutils literal"><span class="pre">cloud-images/v2</span></code> portion replaces the %s in the
+<p>In this example, the <code class="docutils literal notranslate"><span class="pre">cloud-images/v2</span></code> portion replaces the %s in the
 external link definition defined in the conf.py
-<code class="docutils literal"><span class="pre">http://developer.rackspace.com/docs/%s</span></code>.</p>
+<code class="docutils literal notranslate"><span class="pre">http://developer.rackspace.com/docs/%s</span></code>.</p>
 <p><strong>Link to API reference for a product</strong></p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span>:rax-api:`Cloud Images API Reference &lt;cloud-images/v2&gt;`
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span>:rax-api:`Cloud Images API Reference &lt;cloud-images/v2&gt;`
 </pre></div>
 </div>
 <p><strong>Link to a API doc topic</strong></p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span>:rax-devdocs:`List images operation &lt;cloud-images/v2/developer-guide/#list-images&gt;`
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span>:rax-devdocs:`List images operation &lt;cloud-images/v2/developer-guide/#list-images&gt;`
 </pre></div>
 </div>
 <p><strong>Link to KC article</strong></p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span>:how-to:`Getting Started with Role-Based Access Control (RBAC) &lt;getting-started-with-role-based-access-control-rbac&gt;`
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span>:how-to:`Getting Started with Role-Based Access Control (RBAC) &lt;getting-started-with-role-based-access-control-rbac&gt;`
 </pre></div>
 </div>
 <p>You can see some examples of external link library references to the Rackspace
 Support How To collection articles in the <a class="reference external" href="https://github.com/rackerlabs/docs-core-infra-user-guide/search?utf8=%E2%9C%93&amp;q=%3Ahow-to">Core Infrastructure User Guide
 source files</a>.</p>
 <p><strong>Link to Glossary term</strong></p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span>:rax-glossary:`term &lt;#term&gt;`
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span>:rax-glossary:`term &lt;#term&gt;`
 </pre></div>
 </div>
 <p>You can get the glossary term links from the anchor links assigned to each term
@@ -290,7 +290,7 @@ to docs.rackspace.com. Then, replace the link using the external link
 reference.</p>
 <p>For example, replace a link to the List Images operation in Cloud Images
 API Reference on docs.rackspace.com with the following link reference:</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span>:rax-devdocs:`List images operation
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span>:rax-devdocs:`List images operation
 &lt;cloud-images/v2/developer-guide/#list-images&gt;`
 </pre></div>
 </div>
@@ -302,12 +302,12 @@ html links in your project.</p>
 an external link reference.</p>
 <p>For example, if you have links to a Knowledge Center article, you can
 replace it with the following link:</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span>:kc-article:`Link text &lt;article-label&gt;`.
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span>:kc-article:`Link text &lt;article-label&gt;`.
 </pre></div>
 </div>
 <p>When the Sphinx project builds, the <em>Link text</em> is rendered as a link,
 and the HREF definition is populated with the full URL.</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">rackspace</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">knowledge_center</span><span class="o">/</span><span class="n">article</span><span class="o">/</span><span class="n">TopicTitle</span>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">rackspace</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">knowledge_center</span><span class="o">/</span><span class="n">article</span><span class="o">/</span><span class="n">TopicTitle</span>
 </pre></div>
 </div>
 </li>

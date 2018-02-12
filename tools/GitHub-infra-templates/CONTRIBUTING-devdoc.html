@@ -206,7 +206,7 @@ help contributors figure out which file to update.--><p>This project is develope
 written in <a class="reference external" href="http://sphinx-doc.org/rest.html">reStructuredText</a>, the markup
 syntax and parser component of
 <a class="reference external" href="http://docutils.sourceforge.net/index.html">Python Docutils</a>.</p>
-<p>Source files for the Sphinx documentation project are in the <code class="docutils literal"><span class="pre">api-docs</span></code>
+<p>Source files for the Sphinx documentation project are in the <code class="docutils literal notranslate"><span class="pre">api-docs</span></code>
 directory. Here are key files that define project and content architecture:</p>
 <table border="1" class="colwidths-given docutils">
 <colgroup>
@@ -238,13 +238,13 @@ directory. Here are key files that define project and content architecture:</p>
 <td><a class="reference external" href="https://github.com/rackerlabs/docs-cloud-identity/blob/master/api-docs/conf.py">conf.py</a> (Typically, this file does not require changes.)</td>
 </tr>
 <tr class="row-even"><td>Linux and OS X build script</td>
-<td><code class="docutils literal"><span class="pre">Makefile</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">Makefile</span></code></td>
 </tr>
 <tr class="row-odd"><td>Windows build script</td>
-<td><code class="docutils literal"><span class="pre">make.bat</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">make.bat</span></code></td>
 </tr>
 <tr class="row-even"><td>Requirements file to support local builds</td>
-<td><code class="docutils literal"><span class="pre">requirements.txt</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code></td>
 </tr>
 </tbody>
 </table>
@@ -290,7 +290,7 @@ automated gh-pages output, or to the staging URL that Ash is working on. --></di
 <div class="section" id="merging-content">
 <span id="merging-content"></span><h3>Merging content<a class="headerlink" href="#merging-content" title="Permalink to this headline">#</a></h3>
 <p>All pull requests must be reviewed before merging. For minor updates and
-corrections, get a peer review to ensure content is error-free and doesn't
+corrections, get a peer review to ensure content is error-free and doesn’t
 introduce other issues. For more complex changes or additions, the content
 requires both technical and editorial review before it can be merged.</p>
 <p><strong>Technical review</strong></p>
@@ -325,13 +325,13 @@ developer.rackspace.com
 <span id="set-up-your-build-environment"></span><h4>Set up your build environment<a class="headerlink" href="#set-up-your-build-environment" title="Permalink to this headline">#</a></h4>
 <ol>
 <li><p class="first">Run the following command to activate your virtual environment:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span> <span class="nb">bin</span> <span class="n">activate</span> <span class="n">env</span><span class="o">-</span><span class="n">name</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span> <span class="nb">bin</span> <span class="n">activate</span> <span class="n">env</span><span class="o">-</span><span class="n">name</span>
 </pre></div>
 </div>
 </li>
 <li><p class="first">In the root directory for the project, run the following commands to install
 Sphinx and other required packages:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
 </pre></div>
 </div>
 </li>
@@ -340,7 +340,7 @@ Sphinx and other required packages:</p>
 <div class="section" id="build-the-project">
 <span id="build-the-project"></span><h4>Build the project<a class="headerlink" href="#build-the-project" title="Permalink to this headline">#</a></h4>
 <p>To build the documentation project, run the following commands:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">api</span><span class="o">-</span><span class="n">docs</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">api</span><span class="o">-</span><span class="n">docs</span>
 <span class="n">make</span> <span class="n">clean</span> <span class="n">singlehtml</span>
 </pre></div>
 </div>
@@ -350,7 +350,7 @@ the right.</p>
 <div class="section" id="view-the-html-build-results">
 <span id="view-the-html-build-results"></span><h4>View the HTML build results<a class="headerlink" href="#view-the-html-build-results" title="Permalink to this headline">#</a></h4>
 <p>To open the generated project, run the following command:
-<code class="docutils literal"><span class="pre">open</span> <span class="pre">_build/html/index.html</span></code></p>
+<code class="docutils literal notranslate"><span class="pre">open</span> <span class="pre">_build/html/index.html</span></code></p>
 </div>
 </div>
 </div>

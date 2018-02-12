@@ -197,8 +197,8 @@
 rendering when using Sphinx and the recommonmark extension.</p>
 <ol class="arabic simple">
 <li><strong>Prebuild.py</strong> makes temporary copies of markdown files and converts
-markdown tables fenced by <code class="docutils literal"><span class="pre">&lt;!--table--&gt;</span> <span class="pre">&lt;!--endtable--&gt;</span></code> comment lines to
-RST tables fenced by <code class="docutils literal"><span class="pre">eval_rst</span></code> code blocks.</li>
+markdown tables fenced by <code class="docutils literal notranslate"><span class="pre">&lt;!--table--&gt;</span> <span class="pre">&lt;!--endtable--&gt;</span></code> comment lines to
+RST tables fenced by <code class="docutils literal notranslate"><span class="pre">eval_rst</span></code> code blocks.</li>
 <li>Sphinx builds HTML using the markdown files with the converted
 rst tables.</li>
 <li><strong>Postbuild.py</strong> returns the markdown files to their original state and
@@ -206,10 +206,10 @@ removes the temporary files created by <strong>prebuild.py</strong>.</li>
 </ol>
 <div class="section" id="formatting-markdown-tables">
 <h2>Formatting markdown tables<a class="headerlink" href="#formatting-markdown-tables" title="Permalink to this headline">#</a></h2>
-<p>To label a markdown table for conversion, add <code class="docutils literal"><span class="pre">&lt;!--table--&gt;</span></code> on the line
-prior to the table and <code class="docutils literal"><span class="pre">&lt;!--endtable--&gt;</span></code> on the line after the table.
+<p>To label a markdown table for conversion, add <code class="docutils literal notranslate"><span class="pre">&lt;!--table--&gt;</span></code> on the line
+prior to the table and <code class="docutils literal notranslate"><span class="pre">&lt;!--endtable--&gt;</span></code> on the line after the table.
 For example:</p>
-<div class="code ini highlight-default"><div class="highlight"><pre><span></span>&lt;!--table--&gt;
+<div class="code ini highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;!--table--&gt;
 | Tables        | Are           | Cool  |
 | ------------- |-------------- | ----- |
 | col 3 is      | nifty         | $1600 |
@@ -225,17 +225,17 @@ some limitations to what it can parse.</p>
 <p><strong>HTML tags</strong></p>
 <p>Pandoc converts HTML tags in markdown tables to raw HTML directives in RST.
 This breaks the table syntax.</p>
-<p>The <strong>prebuild.py</strong> and <strong>postbuild.py</strong> scripts can handle <code class="docutils literal"><span class="pre">&lt;br&gt;</span></code> and
-<code class="docutils literal"><span class="pre">&lt;li&gt;</span></code> HTML tags. Do not use any other HTML tags within markdown tables.</p>
-<p>An alternative to <code class="docutils literal"><span class="pre">&lt;li&gt;</span></code> tags is <code class="docutils literal"><span class="pre">&amp;bull;</span></code>, which inserts a bullet point
+<p>The <strong>prebuild.py</strong> and <strong>postbuild.py</strong> scripts can handle <code class="docutils literal notranslate"><span class="pre">&lt;br&gt;</span></code> and
+<code class="docutils literal notranslate"><span class="pre">&lt;li&gt;</span></code> HTML tags. Do not use any other HTML tags within markdown tables.</p>
+<p>An alternative to <code class="docutils literal notranslate"><span class="pre">&lt;li&gt;</span></code> tags is <code class="docutils literal notranslate"><span class="pre">&amp;bull;</span></code>, which inserts a bullet point
 character.</p>
 <p>If you require other HTML tags, please open an issue in
 <a class="reference external" href="https://github.com/rackerlabs/docs-rackspace">rackerlabs/docs-rackspace</a>
 to have support added.</p>
 <p><strong>Empty cells</strong></p>
 <p>The conversion process cannot handle empty cells in tables. If you require
-a blank cell, use <code class="docutils literal"><span class="pre">&amp;nbsp;</span></code> in the cell. Example:</p>
-<div class="code ini highlight-default"><div class="highlight"><pre><span></span>&lt;!--table--&gt;
+a blank cell, use <code class="docutils literal notranslate"><span class="pre">&amp;nbsp;</span></code> in the cell. Example:</p>
+<div class="code ini highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;!--table--&gt;
 Correct name | Notes
 --- | ---
 Apache | This is a good name.
@@ -251,27 +251,27 @@ Git   | We all love Git.
 <div class="section" id="configuration">
 <h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">#</a></h2>
 <p>The <strong>prebuild.py</strong> and <strong>postbuild.py</strong> scripts read configuration settings
-from the <code class="docutils literal"><span class="pre">tox.ini</span></code> file in the <code class="docutils literal"><span class="pre">[mdsphinx]</span></code> section. The following settings
+from the <code class="docutils literal notranslate"><span class="pre">tox.ini</span></code> file in the <code class="docutils literal notranslate"><span class="pre">[mdsphinx]</span></code> section. The following settings
 are available:</p>
 <dl class="docutils">
 <dt>docdir</dt>
-<dd>The documentation directory, relative to <code class="docutils literal"><span class="pre">tools/</span></code>. This is usually
-<code class="docutils literal"><span class="pre">../doc/</span></code>.</dd>
+<dd>The documentation directory, relative to <code class="docutils literal notranslate"><span class="pre">tools/</span></code>. This is usually
+<code class="docutils literal notranslate"><span class="pre">../doc/</span></code>.</dd>
 <dt>mdsuffix</dt>
-<dd>The suffix being used for markdown files. This is usually <code class="docutils literal"><span class="pre">.md</span></code>.</dd>
+<dd>The suffix being used for markdown files. This is usually <code class="docutils literal notranslate"><span class="pre">.md</span></code>.</dd>
 <dt>tempsuffix</dt>
 <dd>The temporary suffix used during the conversion process. This is usually
-<code class="docutils literal"><span class="pre">.temp</span></code>.</dd>
+<code class="docutils literal notranslate"><span class="pre">.temp</span></code>.</dd>
 <dt>ignore</dt>
 <dd>A comma-separated list of files to ignore. Use file names only without
 paths. Does not accept directories or wildcards (*).</dd>
 <dt>debug</dt>
-<dd><p class="first"><code class="docutils literal"><span class="pre">True</span></code> - show debugging output.</p>
-<p class="last"><code class="docutils literal"><span class="pre">False</span></code> - hide debugging output.</p>
+<dd><p class="first"><code class="docutils literal notranslate"><span class="pre">True</span></code> - show debugging output.</p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">False</span></code> - hide debugging output.</p>
 </dd>
 </dl>
 <p><strong>Sample configuration</strong></p>
-<div class="code ini highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">mdsphinx</span><span class="p">]</span>
+<div class="code ini highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">mdsphinx</span><span class="p">]</span>
 <span class="n">docdir</span> <span class="o">=</span> <span class="o">../</span><span class="n">doc</span><span class="o">/</span>
 <span class="n">mdsuffix</span> <span class="o">=</span> <span class="o">.</span><span class="n">md</span>
 <span class="n">tempsuffix</span> <span class="o">=</span> <span class="o">.</span><span class="n">temp</span>
@@ -283,9 +283,9 @@ paths. Does not accept directories or wildcards (*).</dd>
 <div class="section" id="makefile-html-target">
 <h2>Makefile html target<a class="headerlink" href="#makefile-html-target" title="Permalink to this headline">#</a></h2>
 <p>The <strong>prebuild.py</strong> and <strong>postbuild.py</strong> scripts are integrated into the
-<strong>Makefile</strong> html target. They run automatically when the <code class="docutils literal"><span class="pre">tox</span> <span class="pre">-e</span> <span class="pre">checkbuild</span></code>
-or <code class="docutils literal"><span class="pre">make</span> <span class="pre">html</span></code> commands are run.</p>
-<div class="code ini highlight-default"><div class="highlight"><pre><span></span>html:
+<strong>Makefile</strong> html target. They run automatically when the <code class="docutils literal notranslate"><span class="pre">tox</span> <span class="pre">-e</span> <span class="pre">checkbuild</span></code>
+or <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code> commands are run.</p>
+<div class="code ini highlight-default notranslate"><div class="highlight"><pre><span></span>html:
 @echo &quot;\nConverting MD tables to RST&quot;
 python3 ../tools/prebuild.py
 @echo
@@ -315,7 +315,7 @@ especially when converting complex tables.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>row</strong> (<em>str</em>) -- a row of grid table text</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>row</strong> (<em>str</em>) – a row of grid table text</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a row of list-table text</td>
 </tr>
@@ -333,7 +333,7 @@ especially when converting complex tables.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>gridtable</strong> (<em>list</em>) -- an RST grid table</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>gridtable</strong> (<em>list</em>) – an RST grid table</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">an RST list-table</td>
 </tr>
@@ -352,8 +352,8 @@ especially when converting complex tables.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>files</strong> (<em>list</em>) -- list of filenames</li>
-<li><strong>temptsuffix</strong> -- temporary file extension addition</li>
+<li><strong>files</strong> (<em>list</em>) – list of filenames</li>
+<li><strong>temptsuffix</strong> – temporary file extension addition</li>
 </ul>
 </td>
 </tr>
@@ -370,7 +370,7 @@ especially when converting complex tables.</p>
 </tr>
 </tbody>
 </table>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">copydocs</span><span class="p">([</span><span class="s1">&#39;file1.md.temp&#39;</span><span class="p">,</span><span class="s1">&#39;file2.md.temp&#39;</span><span class="p">],</span> <span class="s1">&#39;.temp&#39;</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">copydocs</span><span class="p">([</span><span class="s1">&#39;file1.md.temp&#39;</span><span class="p">,</span><span class="s1">&#39;file2.md.temp&#39;</span><span class="p">],</span> <span class="s1">&#39;.temp&#39;</span><span class="p">)</span>
 <span class="go">1</span>
 </pre></div>
 </div>
@@ -385,13 +385,13 @@ especially when converting complex tables.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>docroot</strong> (<em>str</em>) -- directory containing documentation files</li>
-<li><strong>suffix</strong> (<em>str</em>) -- extension of files to collect</li>
-<li><strong>ignore</strong> (<em>str</em>) -- file(s) to ignore</li>
+<li><strong>docroot</strong> (<em>str</em>) – directory containing documentation files</li>
+<li><strong>suffix</strong> (<em>str</em>) – extension of files to collect</li>
+<li><strong>ignore</strong> (<em>str</em>) – file(s) to ignore</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">list of filenames in <code class="docutils literal"><span class="pre">docroot</span></code> with the <code class="docutils literal"><span class="pre">suffix</span></code> extension</p>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">list of filenames in <code class="docutils literal notranslate"><span class="pre">docroot</span></code> with the <code class="docutils literal notranslate"><span class="pre">suffix</span></code> extension</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">list</p>
@@ -401,7 +401,7 @@ especially when converting complex tables.</p>
 </tr>
 </tbody>
 </table>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">listfiles</span><span class="p">(</span><span class="s1">&#39;./&#39;</span><span class="p">,</span> <span class="s1">&#39;.none&#39;</span><span class="p">,</span> <span class="s1">&#39;README.md&#39;</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">listfiles</span><span class="p">(</span><span class="s1">&#39;./&#39;</span><span class="p">,</span> <span class="s1">&#39;.none&#39;</span><span class="p">,</span> <span class="s1">&#39;README.md&#39;</span><span class="p">)</span>
 <span class="go">[]</span>
 </pre></div>
 </div>
@@ -415,7 +415,7 @@ especially when converting complex tables.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>mdstring</strong> (<em>str</em>) -- markdown string with RST grid tables</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>mdstring</strong> (<em>str</em>) – markdown string with RST grid tables</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">markdown string with RST grid tables converted to RST list-tables</td>
 </tr>
@@ -433,7 +433,7 @@ especially when converting complex tables.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>mdstring</strong> (<em>str</em>) -- markdown string with <code class="docutils literal"><span class="pre">&lt;!--table--&gt;</span> <span class="pre">&lt;!--endtable--&gt;</span></code>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>mdstring</strong> (<em>str</em>) – markdown string with <code class="docutils literal notranslate"><span class="pre">&lt;!--table--&gt;</span> <span class="pre">&lt;!--endtable--&gt;</span></code>
 fenced tables</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">markdown string with MD table converted to RST grid table</td>
@@ -444,7 +444,7 @@ fenced tables</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">parsedoc</span><span class="p">(</span><span class="s1">&#39;A string of markdown.&#39;</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">parsedoc</span><span class="p">(</span><span class="s1">&#39;A string of markdown.&#39;</span><span class="p">)</span>
 <span class="go">&#39;A string of markdown.&#39;</span>
 </pre></div>
 </div>
@@ -458,7 +458,7 @@ fenced tables</td>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>mdstring</strong> (<em>str</em>) -- markdown string</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>mdstring</strong> (<em>str</em>) – markdown string</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">markdown string with parse-safe substitutes converted to strings</td>
 </tr>
@@ -468,7 +468,7 @@ fenced tables</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">postparse</span><span class="p">(</span><span class="s1">&#39;A string of @br@markdown.&#39;</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">postparse</span><span class="p">(</span><span class="s1">&#39;A string of @br@markdown.&#39;</span><span class="p">)</span>
 <span class="go">&#39;A string of \n      markdown.&#39;</span>
 </pre></div>
 </div>
@@ -482,7 +482,7 @@ fenced tables</td>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>mdstring</strong> (<em>str</em>) -- markdown string</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>mdstring</strong> (<em>str</em>) – markdown string</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">markdown string with HTML tags converted to parse-safe strings</td>
 </tr>
@@ -492,7 +492,7 @@ fenced tables</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">preparse</span><span class="p">(</span><span class="s1">&#39;A string of &lt;br /&gt;markdown.&#39;</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">preparse</span><span class="p">(</span><span class="s1">&#39;A string of &lt;br /&gt;markdown.&#39;</span><span class="p">)</span>
 <span class="go">&#39;A string of @br@markdown.&#39;</span>
 </pre></div>
 </div>
@@ -506,7 +506,7 @@ fenced tables</td>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>files</strong> (<em>list</em>) -- files to process</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>files</strong> (<em>list</em>) – files to process</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">0 (Success), 1 (Failure)</td>
 </tr>
@@ -516,7 +516,7 @@ fenced tables</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">processdocs</span><span class="p">([</span><span class="s1">&#39;file1.md.temp&#39;</span><span class="p">,</span><span class="s1">&#39;file2.md.temp&#39;</span><span class="p">])</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">processdocs</span><span class="p">([</span><span class="s1">&#39;file1.md.temp&#39;</span><span class="p">,</span><span class="s1">&#39;file2.md.temp&#39;</span><span class="p">])</span>
 <span class="go">1</span>
 </pre></div>
 </div>
@@ -530,7 +530,7 @@ fenced tables</td>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>infile</strong> (<em>str</em>) -- file to read</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>infile</strong> (<em>str</em>) – file to read</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">text (Success), 1 (Failure)</td>
 </tr>
@@ -540,7 +540,7 @@ fenced tables</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">readfile</span><span class="p">(</span><span class="s1">&#39;tools/example.txt&#39;</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">readfile</span><span class="p">(</span><span class="s1">&#39;tools/example.txt&#39;</span><span class="p">)</span>
 <span class="go">&#39;Hello world!&#39;</span>
 </pre></div>
 </div>
@@ -554,7 +554,7 @@ fenced tables</td>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>outfile</strong> -- file to write</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>outfile</strong> – file to write</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">0 (Success), 1 (Failure)</td>
 </tr>
@@ -564,7 +564,7 @@ fenced tables</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">writefile</span><span class="p">(</span><span class="s1">&#39;tools/example.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;Hello world!&#39;</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">writefile</span><span class="p">(</span><span class="s1">&#39;tools/example.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;Hello world!&#39;</span><span class="p">)</span>
 <span class="go">0</span>
 </pre></div>
 </div>
@@ -583,8 +583,8 @@ fenced tables</td>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>files</strong> (<em>list</em>) -- files with <code class="docutils literal"><span class="pre">.temp</span></code> extension</li>
-<li><strong>temptsuffix</strong> -- temporary file extension addition</li>
+<li><strong>files</strong> (<em>list</em>) – files with <code class="docutils literal notranslate"><span class="pre">.temp</span></code> extension</li>
+<li><strong>temptsuffix</strong> – temporary file extension addition</li>
 </ul>
 </td>
 </tr>
@@ -601,7 +601,7 @@ fenced tables</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">cleanup</span><span class="p">([</span><span class="s1">&#39;file1.md.temp&#39;</span><span class="p">,</span><span class="s1">&#39;file2.md.temp&#39;</span><span class="p">],</span> <span class="s1">&#39;.temp&#39;</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">cleanup</span><span class="p">([</span><span class="s1">&#39;file1.md.temp&#39;</span><span class="p">,</span><span class="s1">&#39;file2.md.temp&#39;</span><span class="p">],</span> <span class="s1">&#39;.temp&#39;</span><span class="p">)</span>
 <span class="go">0</span>
 </pre></div>
 </div>
@@ -611,7 +611,7 @@ fenced tables</td>
 <div class="section" id="example-input-and-output">
 <h2>Example input and output<a class="headerlink" href="#example-input-and-output" title="Permalink to this headline">#</a></h2>
 <p>Prebuild.py converts a markdown file with the following content:</p>
-<div class="code ini highlight-default"><div class="highlight"><pre><span></span># Heading 1
+<div class="code ini highlight-default notranslate"><div class="highlight"><pre><span></span># Heading 1
 This is some text
 
 ## Heading 2
@@ -629,7 +629,7 @@ More paragraphs, tables, and other markdown text.
 </pre></div>
 </div>
 <p>to a markdown file with the following content:</p>
-<div class="code ini highlight-default"><div class="highlight"><pre><span></span># Heading 1
+<div class="code ini highlight-default notranslate"><div class="highlight"><pre><span></span># Heading 1
 This is some text
 
 ## Heading 2
