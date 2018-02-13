@@ -83,7 +83,7 @@ linkcheck_anchors = False
 
 # General information about the project.
 project = 'Rackspace Documentation Guides'
-copyright = '2016, Rackspace'
+copyright = '2016-2018, Rackspace'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
