@@ -3,7 +3,7 @@ Rackspace blog processes and procedures
 =======================================
 
 Date published: January 31, 2017 by Joseph Robinson
-Date updated: June 2, 2017 by Catherine Richardson
+Date updated: February 14, 2018 by Catherine Richardson
 
 This guide describes both how to write a blog post for the Rackspace blog
 (writing tips and content suggestions) and how to contribute the post for
@@ -100,7 +100,7 @@ Before you start writing, consider the following questions:
   *  **Tools**: We recommend using a word processor, like MicroSoft Word, or a
      text editor for your writing.
 
-  *  **General Format**: Send your blog contact (that’s Tracy or Abe - see
+  *  **General Format**: Send your blog contact (that’s Tracy - see
       contact information at the bottom of these instructions) your draft as
       a Word document. They will edit it with tracked changes and send back
       for your approval.
@@ -181,5 +181,4 @@ Rackspace blog contact
 ----------------------
 
 In addition to blog@rackspace.com, you can contact Tracy Hamilton
-(tracy.hamilton@rackspace.com) or Abe Selig (abe.selig@rackspace.com) for
-specifics about getting your blog posted.
+(tracy.hamilton@rackspace.com) for specifics about getting your blog posted.

@@ -12,4 +12,3 @@ Rackspace products and services.
 
    how-to-task-template.md
    ISSUE_TEMPLATE.md
-   PULL_REQUEST_TEMPLATE.md
