@@ -16,33 +16,19 @@ syntax and parser component of
 Source files for the Sphinx documentation project are in the ``api-docs``
 directory. Here are key files that define project and content architecture:
 
-```eval_rst
-.. list-table::
-   :widths: 50 50
-   :header-rows: 1
-
-   * - Content
-     - File
-   * - Index page for the main content structure
-     - `index.rst <https://github.com/rackerlabs/docs-cloud-identity/blob/master/api-docs/index.rst>`__
-   * - Getting Started Guide
-     - `getting-started <https://github.com/rackerlabs/docs-cloud-identity/tree/master/api-docs/getting-started>`__
-   * - General API information index
-     - `general-api-info/index.rst <https://github.com/rackerlabs/docs-cloud-identity/blob/master/api-docs/general-api-info/index.rst>`__
-   * - API Reference index
-     - `api-reference/index.rst <https://github.com/rackerlabs/docs-cloud-identity/blob/master/api-docs/api-reference/index.rst>`__
-   * - API methods, including code samples
-     - `api-reference/methods <https://github.com/rackerlabs/docs-cloud-identity/tree/master/api-docs/api-reference/methods>`__
-   * - Sphinx documentation configuration file
-     - `conf.py <https://github.com/rackerlabs/docs-cloud-identity/blob/master/api-docs/conf.py>`__ (Typically, this file does not require changes.)
-   * - Linux and OS X build script
-     - ``Makefile``
-   * - Windows build script
-     - ``make.bat``
-   * - Requirements file to support local builds
-     - ``requirements.txt``
-
-```
+<!--table-->
+Content | File
+--- | ---
+|Index page for the main content structure| [index.rst](https://github.com/rackerlabs/docs-cloud-identity/blob/master/api-docs/index.rst)
+|Getting Started Guide| [getting-started](https://github.com/rackerlabs/docs-cloud-identity/tree/master/api-docs/getting-started)
+|General API information index|[general-api-info/index.rst](https://github.com/rackerlabs/docs-cloud-identity/blob/master/api-docs/general-api-info/index.rst)
+|API Reference index|[api-reference/index.rst](https://github.com/rackerlabs/docs-cloud-identity/blob/master/api-docs/api-reference/index.rst)
+|API methods, including code samples|[api-reference/methods](https://github.com/rackerlabs/docs-cloud-identity/tree/master/api-docs/api-reference/methods)
+|Sphinx documentation configuration file| [conf.py](https://github.com/rackerlabs/docs-cloud-identity/blob/master/api-docs/conf.py) (Typically, this file does not require changes.)
+|Linux and OS X build script|``Makefile``|
+|Windows build script|``make.bat``|
+|Requirements file to support local builds| ``requirements.txt``
+<!--endtable-->
 
 * Update the source files by using the GitHub editor or any plain text editor.
 * Format source files with
