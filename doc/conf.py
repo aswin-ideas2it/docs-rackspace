@@ -15,8 +15,8 @@ serve to show the default.
 import os
 import sys
 
-from recommonmark.parser import CommonMarkParser
-from recommonmark.transform import AutoStructify
+# from recommonmark.parser import CommonMarkParser
+# from recommonmark.transform import AutoStructify
 
 try:
     import sphinx_rtd_theme
@@ -55,9 +55,9 @@ if spelling is not None:
 # templates_path = ['_templates']
 
 # Parsers for non-Sphinx RST formats
-source_parsers = {
-    '.md': CommonMarkParser,
-}
+#source_parsers = {
+#    '.md': CommonMarkParser,
+#}
 
 # The suffix of source filenames.
 source_suffix = ['.rst', '.md']
@@ -193,7 +193,7 @@ html_context = {
 
 # If true, SmartyPants will be used to convert quotes and dashes to
 # typographically correct entities.
-html_use_smartypants = False
+# html_use_smartypants = False
 
 # Custom sidebar templates, maps document names to template names.
 # html_sidebars = {}
@@ -235,15 +235,15 @@ htmlhelp_basename = 'docs-rackspace'
 html_add_permalinks = '#'
 
 
-def setup(app):
-    """Setup sphinx app extension hook for recommonmark."""
-    app.add_config_value('recommonmark_config', {
-        'enable_auto_doc_ref': True,
-        'auto_toc_tree_section': None,
-        'enable_auto_toc_tree': True,
-        'enable_eval_rst': True,
-        'enable_math': False,
-        'enable_inline_math': False,
-        'url_resolver': lambda x: x,
-        }, True)
-    app.add_transform(AutoStructify)
+#def setup(app):
+#    """Setup sphinx app extension hook for recommonmark."""
+#    app.add_config_value('recommonmark_config', {
+#        'enable_auto_doc_ref': True,
+#        'auto_toc_tree_section': None,
+#        'enable_auto_toc_tree': True,
+#        'enable_eval_rst': True,
+#        'enable_math': False,
+#        'enable_inline_math': False,
+#        'url_resolver': lambda x: x,
+#        }, True)
+#    app.add_transform(AutoStructify)
