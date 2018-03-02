@@ -37,9 +37,6 @@ consistent technical content for Rackspace customers.
    Cloud services APIs. You can use these basic guidelines, however, when
    writing release notes for any product or service.
 
-:ref:`UI-content-guidelines`
-   Provides instructions specifically for writing content within a user
-   interface (UI). For information about the elements in a UI, see the `Helix documentation <http://helix.rax.io/>`_. 
 
 .. toctree::
    :hidden:
@@ -52,7 +49,6 @@ consistent technical content for Rackspace customers.
    terminology/index.rst
    screenshots/index.rst
    release-notes-guidelines.rst
-   UI-content/index.rst
    revision-history.rst
 
 .. image:: https://i.creativecommons.org/l/by/4.0/88x31.png

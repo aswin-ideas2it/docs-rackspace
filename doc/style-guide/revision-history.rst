@@ -4,11 +4,6 @@ Style guide revision history
 
 This file summarizes the changes that have been made to the style guide.
 
-February 2017
-~~~~~~~~~~~~~
-
-- Added content style guidelines for user interfaces (UIs).
-
 June 19, 2017
 ~~~~~~~~~~~~~
 
