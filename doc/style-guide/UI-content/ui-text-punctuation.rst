@@ -7,7 +7,7 @@ UI text punctuation guidelines
 Using punctuation consistently throughout a UI maintains a user-friendly and
 professional look.
 
-For more general information, see :ref:`punctuation`.
+For more general information, see `punctuation <http://rackerlabs.github.io/docs-rackspace/style-guide/style/punctuation.html>`_.
 
 
 Apostrophes and quotation marks

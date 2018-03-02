@@ -30,14 +30,13 @@ writing to your audience:
 - Help users avoid errors and roadblocks. Make sure content helps users
   recover quickly if those things happen.
 
-- Avoid :ref:`abbreviations<abbreviations>`, acronyms, and slang. Use an
+- Avoid `abbreviations <http://rackerlabs.github.io/docs-rackspace/style-guide/style/abbreviations.html?highlight=abbreviations>`_, acronyms, and slang. Use an
   abbreviation only if it is better known than the word that it stands for or
   if space savings is critical.
 
-- Write in :ref:`active voice<use-active-voice>`.
+- Write in `active voice <http://rackerlabs.github.io/docs-rackspace/style-guide/writing/use-active-voice.html?highlight=active%20voice>`_.
 
-- Use :ref:`contractions<contractions>` according to the Rackspace style for
-  technical content.
+- Use `contractions <http://rackerlabs.github.io/docs-rackspace/style-guide/style/contractions.html?highlight=contractions>`_ according to the Rackspace style for technical content.
 
 - Use inclusive language. Speak directly to users when you know enough about
   them.
@@ -52,7 +51,7 @@ Point of view
 Use the second person to address the user. Avoid using the first
 person in interface content because it can create confusion
 about who is being addressed. When possible, avoid pronouns in interface
-content. For more information, see :ref:`Write to the user<write-to-the-user>`.
+content. For more information, see `write to the user <http://rackerlabs.github.io/docs-rackspace/style-guide/writing/write-to-the-user.html?highlight=write%20user>`_.
 
 .. list-table::
    :widths: 50 50
@@ -134,7 +133,8 @@ Be clear
 Use easy-to-understand language that aligns content with functionality. Focus
 on what happens to the user, not on what is happening to the software. In your
 content is it better for it to be correct than for it to be exhaustively
-technically accurate. Be :ref:`clear and concise<write-clear-concise-sentences-paragraphs>`.
+technically accurate. Be `clear and concise
+<http://rackerlabs.github.io/docs-rackspace/style-guide/writing/write-clear-concise-sentences-paragraphs.html>`_.
 
 .. list-table::
    :widths: 34 33 33
