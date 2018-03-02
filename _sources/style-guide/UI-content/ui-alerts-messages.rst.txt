@@ -26,8 +26,7 @@ When writing alerts and messages, use the following rules:
   active voice (``The Control Panel is not responding.``) where possible.
 - Keep sentences short but helpful.
 - Alerts and messages must be accurate, complete, and helpful.
-- Adhere to the guidelines in the :ref:`Style Guide<messages>` for writing
-  alerts and messages.
+- Adhere to the guidelines in the `Messages section of the Style Guide <http://rackerlabs.github.io/docs-rackspace/style-guide/style/messages.html?highlight=messages>`_ for writing alerts and messages.
 
 Message types
 -------------

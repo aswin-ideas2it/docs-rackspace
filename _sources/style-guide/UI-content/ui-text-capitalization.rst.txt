@@ -11,7 +11,7 @@ actions.
 When building new products, we also align capitalization practices with
 platform conventions to match user expectations.
 
-For more general information, see :ref:`capitalization`.
+For more general information, see `capitalization <http://rackerlabs.github.io/docs-rackspace/style-guide/style/capitalization.html?highlight=capitalization>`_.
 
 Capitalization styles
 ---------------------

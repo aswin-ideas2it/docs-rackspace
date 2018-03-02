@@ -27,8 +27,9 @@ consistent, and concise.
    ui-icons.rst
    ui-panel-format.rst
 
-In addition to this information, review the following sections of the Style
-Guide, which also apply to content in the UI:
+In addition to this information, review the following sections of the
+*Rackspace Style Guide for Technical Content*, which also apply to content in
+the UI:
 
--  :ref:`general writing guidelines<index-writing-guidelines>`
--  :ref:`style guidelines<index-style-guidelines>`
+-  `general writing guidelines <http://rackerlabs.github.io/docs-rackspace/style-guide/writing/index.html>`_
+-  `style guidelines <http://rackerlabs.github.io/docs-rackspace/style-guide/style/index.html>`_
