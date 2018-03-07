@@ -17,18 +17,18 @@ Unless space is limited, always show dates in the following format:
 
    * - Use
      - Avoid
-   * - November 12, 2010
-     - 12 Nov 2010
+   * - November 12, 2017
+     - 12 Nov 2017
 
-       2010-Nov-12
+       2017-Nov-12
 
-       11/12/2010
+       11/12/2017
 
-       11/12/10
+       11/12/17
 
-       12/11/10
+       12/11/17
 
-       10-11-12
+       10-11-17
 
 .. note::
 
@@ -45,11 +45,11 @@ comma following the year.
    :header-rows: 1
 
    * - Use
-   * - Any sites that are using MySQL 4 after November 1, 2011, will be
+   * - Any sites that are using MySQL 4 after November 1, 2017, will be
        automatically migrated to MySQL 5.
    * - The Alert Logic Security Research Team used 12 months of security event
-       data captured from July 2010 through June 2011.
-   * - As of September 2013, a subset of customer accounts weren't being
+       data captured from July 2016 through June 2017.
+   * - As of September 2017, a subset of customer accounts weren't being
        billed for actual usage in comparison to their preselected SQL Server
        storage allocations.
 
@@ -62,8 +62,8 @@ Use an all-numeric date only in the following situations:
 Because all-numeric dates are interpreted differently in different
 countries, explain the format of a numeric date, and use a consistent
 format throughout the documentation. If possible, use the ISO 8601
-format, which is *yyyy*-*mm*-*dd* (for example, 2012-11-10 for November
-10, 2012).
+format, which is *yyyy*-*mm*-*dd* (for example, 2017-11-10 for November
+10, 2017).
 
 .. list-table::
    :widths: 100
@@ -71,7 +71,7 @@ format, which is *yyyy*-*mm*-*dd* (for example, 2012-11-10 for November
 
    * - Use
    * - The value that's shown for 8/19/10 represents the average number of
-       extents from data collections beginning August 19, 2010.
+       extents from data collections beginning August 19, 2017.
 
 For information about and examples for showing a date range, see
 :ref:`ranges-of-numbers`.

@@ -62,9 +62,9 @@ trademarks in documentation.
        Abbreviations are acceptable only if they're used by the owning company
        and also trademarked.
      - This article describes the process of backing up a Microsoft SQL Server
-       2008 database. These actions need to be completed by the Administrator
+       database. These actions need to be completed by the Administrator
        user or by a user who is part of the SQL Server Admin user group.
-     - This article describes the process of backing up an MS SQL Server 2008
+     - This article describes the process of backing up an MS SQL Server
        database. These actions need to be completed by the Administrator user
        or by a user that's part of the MS SQL Admin user group.
    * - Use trademarks as adjectives on first use in the text of an article or

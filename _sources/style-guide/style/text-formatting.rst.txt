@@ -102,7 +102,7 @@ elements. The following style differences are highlighted:
        In RST, apply the ``.. code-block:: console`` directive.
        For configuration files, use ``.. code-block:: ini``
        or ``.. code-block:: yaml`` as appropriate.
-     
+
      - ``$ grep "ftp" /etc/xinetd.d/*``
        ``/etc/xinetd.d/vsftpd:service ftp``
        ``/etc/xinetd.d/vsftpd:server = /usr/sbin/vsftpd``
@@ -296,7 +296,7 @@ elements. The following style differences are highlighted:
      - Bold
 
        In RST, apply the ``:guilabel:`` directive.
-     - From the **Account Type** list, select **Exchange 2007**.
+     - From the **Account Type** list, select **Exchange**.
 
        To view these settings, select **Configure Backup** from the **Backup
        Actions** list.
@@ -311,7 +311,7 @@ elements. The following style differences are highlighted:
        Select **Start > Control Panel**, and then click the **Mail** icon.
    * - Messages (error, warning)
      - Monospace
-     - In SQL Server Management Studio, when you right-click a SQL Server 2012
+     - In SQL Server Management Studio, when you right-click a SQL Server
        database and selecting **Properties**, the following error message
        appears:
 
