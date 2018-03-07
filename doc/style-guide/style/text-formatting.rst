@@ -195,8 +195,8 @@ elements. The following style differences are highlighted:
        and the authentication token to the ``$token`` environment variable.
    * - Error messages
      - Monospace
-     - In SQL Server Management Studio, when you right-click a SQL Server 2012
-       database and selecting **Properties**, the following error message
+     - In SQL Server Management Studio, when you right-click a SQL Server
+       database and select **Properties**, the following error message
        appears:
 
        ``The user doesn't have permission to perform this action.``
