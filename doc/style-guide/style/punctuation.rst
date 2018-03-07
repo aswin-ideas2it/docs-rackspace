@@ -169,18 +169,18 @@ grammar reference, such as the *Harbrace College Handbook*.
        before and after the year. When only the month and year compose the
        date, omit the commas unless the syntax would ordinarily require a comma
        following the year.
-     - The company acquired a German subsidiary on July 15, 2009, and is
+     - The company acquired a German subsidiary on July 15, 2017, and is
        negotiating the purchase of a small Japanese company.
 
-       The publications plan was printed in November 2010 in Austin.
+       The publications plan was printed in November 2017 in Austin.
 
-       In December 2012, the database restoration failed.
-     - The company acquired a German subsidiary on July 15, 2009 and is
+       In December 2017, the database restoration failed.
+     - The company acquired a German subsidiary on July 15, 2017 and is
        negotiating the purchase of a small Japanese company.
 
-       The publications plan was printed in November, 2010, in Austin.
+       The publications plan was printed in November, 2017, in Austin.
 
-       In December 2012 the database restoration failed.
+       In December 2017 the database restoration failed.
 
 .. _dashes:
 

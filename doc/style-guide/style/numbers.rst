@@ -146,8 +146,8 @@ When describing number ranges, use the following guidelines:
      - step 12 through step 16, inclusive
    * - from 10 to 20 diagrams
      - from 10–20 diagrams
-   * - between 2010 and 2012
-     - between 2000–2002
+   * - between 2015 and 2017
+     - between 2015–2017
 
 Unspecified, generic, and unknown numbers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

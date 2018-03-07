@@ -101,7 +101,7 @@ parts of speech:
 
        *Use:*
 
-       Entourage 2008 Web Services Edition is a free add-on to Entourage 2008
+       Entourage Web Services Edition is a free add-on to Entourage
        provided by Microsoft.
    * - ad hoc
      -
