@@ -25,7 +25,7 @@ contractions are acceptable:
    Because such contractions can be confused with possessives, ensure that your
    usage is correct.
 
-Avoid the following types of contractions, which aren't common or can
+Avoid the following types of contractions, which are not common or can
 be confusing depending on context:
 
 -  Contractions that can be misread as other words, such as *let’s*
