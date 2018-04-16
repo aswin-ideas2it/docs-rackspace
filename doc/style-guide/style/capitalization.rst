@@ -160,6 +160,7 @@ in the following table:
    * - Contact your Account Management team can tell you what the charge will
        be.
    * - The Information Development team is amazing!
+   * - Contact Information Development <add email link> for instructions.
 
 Capitalize UI labels as shown on the UI
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
