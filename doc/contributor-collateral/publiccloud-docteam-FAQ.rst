@@ -56,8 +56,6 @@ Architects, and Editors.
 
 Following are the members of the team:
 
-* Christie Lenneville - Rackspace Experience Design (RED) Director, San Antonio
-
 * Karin Levenstein - Information Development Manager, Austin
 
   * Catherine Richardson - Senior Technical Editor, Austin
