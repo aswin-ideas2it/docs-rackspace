@@ -13,6 +13,5 @@ includes information about how to contribute to blog.rackspace.com.
 
    contributor-collateral/index.rst
    style-guide/index.rst
-   templates/index.rst
    tools/index.rst
    outreach/rack-blog-post-process.rst
