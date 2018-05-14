@@ -4,6 +4,21 @@ Style guide revision history
 
 This file summarizes the changes that have been made to the style guide.
 
+May 8, 2018
+~~~~~~~~~~~
+
+-  Removed the guideline to use the ``bolditalic`` directive for the
+   term *Fanatical Support* in RST files (:ref:`trademarks`). For the first
+   mention that is not in a heading, use only bold font and the registered
+   trademark symbol (**Fanatical Support**\®) to be consistent with
+   marketing documentation.
+
+April 16, 2018
+~~~~~~~~~~~~~~
+
+-  Added capitalization guidelines for job titles.
+-  Added capitalization guidelines for team names.
+
 June 19, 2017
 ~~~~~~~~~~~~~
 
@@ -26,8 +41,8 @@ November 10, 2016
 
 -  Converted the style guide to reStructuredText.
 -  :ref:`trademarks`: Added guidelines to show the term *Fanatical Support* in
-   bold and italics (using the ``:bolditalic:`` directive in RST) and to show a
-   registered trademark symbol on first use.
+   bold and italics (using the ``:bolditalic:`` directive in RST) and to show
+   a registered trademark symbol on first use.
 
 July 27, 2016
 ~~~~~~~~~~~~~
