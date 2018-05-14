@@ -4,6 +4,7 @@ Style guide revision history
 
 This file summarizes the changes that have been made to the style guide.
 
+
 May 8, 2018
 ~~~~~~~~~~~
 
