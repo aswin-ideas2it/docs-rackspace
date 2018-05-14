@@ -101,4 +101,4 @@ following ones to help you boost the effectiveness of your writing.
 
        :ref:`terms-for-global-audience`
 
-       :ref:`concise-terms`       
+       :ref:`concise-terms`
