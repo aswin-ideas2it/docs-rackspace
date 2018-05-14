@@ -1,5 +1,5 @@
 
-**Note: The source for this style guide is now maintained in** 
+**Note: The source for this style guide is now maintained in**
 **https://github.com/rackerlabs/docs-style-guide.**
 
 
