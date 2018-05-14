@@ -1,9 +1,12 @@
 
-**Note: The source for this style guide is now maintained in https://github.com/rackerlabs/docs-style-guide.**
+**Note: The source for this style guide is now maintained in** 
+**https://github.com/rackerlabs/docs-style-guide.**
+
+
 
 ======================================================
 Reired source files: Style guide for technical content
-=====================================================+
+======================================================
 
 This document contains writing, style, terminology, and image guidelines for
 Rackspace documentation. Use these guidelines to create clear, concise, and
