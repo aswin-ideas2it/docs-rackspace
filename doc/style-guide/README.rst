@@ -4,9 +4,9 @@
 
 
 
-======================================================
-Reired source files: Style guide for technical content
-======================================================
+=======================================================
+Retired source files: Style guide for technical content
+=======================================================
 
 This document contains writing, style, terminology, and image guidelines for
 Rackspace documentation. Use these guidelines to create clear, concise, and
