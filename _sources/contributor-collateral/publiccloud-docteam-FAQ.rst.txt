@@ -59,16 +59,17 @@ Following are the members of the team:
 * Karin Levenstein - Information Development Manager, Austin
 
   * Catherine Richardson - Senior Technical Editor, Austin
-  * Christopher Moyer - Senior Information Developer, Austin
-  * Erik Wilson - Senior Information Developer, Austin
-  * Kate Dougherty - Information Developer, Work from Home
-  * Robb Romans - Senior Information Developer, Austin
+  * Christopher Moyer - Information Developer IV, Austin
+  * Erik Wilson - Information Developer IV, Austin
+  * Robb Romans - Information Developer IV, Austin
+  * Matt Penna - Information Developer III, Work from Home
+  * Svetlana Karsliogu - Information Developer III, Work from Home
 
 * Renee Rendon (San Antonio) - Team lead for San Antonio Information Developers
 
-  * Cat Lookabaugh - Senior Information Developer, San Antonio
-  * Nate Archer - Information Developer, San Antonio
-  * Stephanie Fillmon - Information Developer, San Antonio
+  * Cat Lookabaugh - Information Developer IV, San Antonio
+  * Kate Dougherty - Information Developer III, Work from Home
+  * Stephanie Fillmon - Information Developer III, San Antonio
 
 API documentation
 ~~~~~~~~~~~~~~~~~
