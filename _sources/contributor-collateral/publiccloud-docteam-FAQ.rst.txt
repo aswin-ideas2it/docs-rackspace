@@ -65,8 +65,8 @@ Following are the members of the team:
   * Matt Penna - Information Developer IV, Remote
   * Svetlana Karsliogu - Information Developer III, Remote
 
-* Renee Rendon (San Antonio) - Team lead (Information Developer V) for
-                               San Antonio Information Developers
+* Renee Rendon (San Antonio) - Team lead (Information Developer V)
+                              for San Antonio Information Developers
 
   * Cat Lookabaugh - Information Developer IV, San Antonio
   * Kate Dougherty - Information Developer II, Remote
