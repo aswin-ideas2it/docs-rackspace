@@ -142,8 +142,7 @@ and source locations, see the following FAQs:
    branch and wait for review feedback.
 
 ### New product, new content
-Whether you are working on a new cloud service or a new type of offering, such
-as Carina, you first work with the Info Dev team to determine what kind of
+Whether you are working on a new cloud service or a new type of offering, you first work with the Info Dev team to determine what kind of
 customer-facing content is needed.
 
 Depending on the offering, a minimum set of content is defined. For example, a
@@ -203,7 +202,6 @@ Domain | Types of content | Format |
 ------ | ---------------- | ------ |
 [developer.rackspace.com](https://developer.rackspace.com/docs/) | Private Cloud end-user documentation <br> Public Cloud API guides <br> Public Cloud SDK quickstart guides| Sphinx documentation project (reStructuredText)
 [support.rackspace.com](https://support.rackspace.com/how-to/) | Articles for using and troubleshooting Rackspace services | Jekyll (Markdown) |
-[getcarina.com](https://getcarina.com/docs/) | Articles for using Carina | Jekyll
 [pages.github.rackspace.com](https://pages.github.rackspace.com/IX/internal-docs-landing-page/) | Private Cloud support documentation <br> Public Cloud service admin guides <br> Product services guides | Sphinx |
 | staging.developer.rackspace.com |
 
