@@ -16,15 +16,16 @@ follow the entire contributing process for this repo go to
 
     ```bash
 
-    git clone git@github.com:my-github-username/getcarina.com.git
+    git clone git@github.com:my-github-username/docs-cloud-files.git
 
     ```
 
 3. Track the upstream repo
 
     ```bash
-    cd getcarina.com
-    git remote add --track master upstream git@github.com:getcarina/getcarina.com.git
+    cd docs-cloud-files
+    git remote add --track master upstream git@github.com:rackerlabs/docs-cloud-files.git
+
 
     ```
 
