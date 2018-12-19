@@ -15,8 +15,7 @@ The rewrites files manage redirects for traffic to the following domains:
 Active sites:
 
 - support.rackspace.com
-- developer.rackspace.com,
-- getcarina.com.
+- developer.rackspace.com
 
 Archived sites:
 
