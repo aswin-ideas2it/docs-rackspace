@@ -16,4 +16,3 @@ Technical Content <https://developer.rackspace.com/docs/style-guide/>`_.
 
    contributor-collateral/index.rst
    tools/index.rst
- 
